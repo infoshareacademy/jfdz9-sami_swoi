@@ -1,7 +1,54 @@
-nav{
+/* ********** NAWIGACJA ********** */
 
+nav {
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    padding-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkred;
 }
 
-header{
+nav a {
+    font-size: 1.5rem;
+    color: navajowhite;
+    text-decoration: none;
+}
+
+nav .logo {
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+    color: navajowhite;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 6rem;
+}
+
+nav ul li:not(:last-child) {
+    padding-right: 10rem;
+}
+
+nav ul li a:hover {
+    color: black;
+    transition: all 300ms;
+    text-decoration: underline;
+}
+
+
+/* ********** HEADER ********** */
+
+header {
+    margin-top: 11vh;
     background-image: url("") ;
 }
