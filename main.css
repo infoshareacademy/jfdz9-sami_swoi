@@ -63,7 +63,7 @@ nav ul li a:hover {
 header {
     padding-top: 4rem;
     text-align: center;
-    background-image: url("") ;
+    background-image: url("");
 }
 
 /* ********** IKONY FUNCKCJI ********** */
@@ -124,7 +124,6 @@ header {
 }
 
 /* ********** SECTION "O NAS" ********** */
-
 
 .o-nas {
     max-width: 600px;
