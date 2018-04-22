@@ -53,62 +53,80 @@ header {
     background-image: url("") ;
 }
 
-/* ********** IKONY FUNCKCJI ********** */
+/* ********** FUNCTION ICONS ********** */
 
 .icons {
-    width: 80%;
-    max-width: 840px;
-    background-color: transparent;
-    margin: 10px auto;
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .function-icon {
-    display: inline-block;
-    background-color: transparent;
-    width: 50%;
-    height: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
+    border: solid black;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.function-icon:nth-child(1), .function-icon:nth-child(3) {
-    float: left;
-}
 
-.img-right {
-    float: right;
-    width: auto;
-    display: inline-block;
-}
 
-.img-left {
-    float: left;
-    width: auto;
-    display: inline-block;
-}
+/*.icons {*/
+    /*width: 80%;*/
+    /*max-width: 840px;*/
+    /*background-color: transparent;*/
+    /*margin: 10px auto;*/
+/*}*/
 
-.img-sticky {
-    position: sticky;
-}
+/*.function-icon {*/
+    /*display: inline-block;*/
+    /*background-color: transparent;*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+    /*position: relative;*/
+/*}*/
 
-.h4-right, .h4-left {
-    display: inline-block;
-    position: fixed;
-    width: 200px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+/*.function-icon:nth-child(1), .function-icon:nth-child(3) {*/
+    /*float: left;*/
+/*}*/
 
-.h4-right {
-    float: right;
-    position: sticky;
-}
+/*.img-right {*/
+    /*float: right;*/
+    /*width: auto;*/
+    /*display: inline-block;*/
+/*}*/
 
-.h4-left {
-    float: left;
-    position: sticky;
-}
+/*.img-left {*/
+    /*float: left;*/
+    /*width: auto;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.img-sticky {*/
+    /*position: sticky;*/
+/*}*/
+
+/*.h4-right, .h4-left {*/
+    /*display: inline-block;*/
+    /*position: fixed;*/
+    /*width: 200px;*/
+    /*margin-top: 10%;*/
+    /*margin-bottom: 10%;*/
+/*}*/
+
+/*.h4-right {*/
+    /*float: right;*/
+    /*position: sticky;*/
+/*}*/
+
+/*.h4-left {*/
+    /*float: left;*/
+    /*position: sticky;*/
+/*}*/
 
 /* ********** SECTION "O NAS" ********** */
 
