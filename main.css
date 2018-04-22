@@ -122,3 +122,16 @@ header {
     float: left;
     position: sticky;
 }
+
+/* ********** SECTION "O NAS" ********** */
+
+
+.o-nas {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 15px;
+}
