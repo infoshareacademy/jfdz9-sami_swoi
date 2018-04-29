@@ -2,7 +2,6 @@
 
 nav {
     font-family: 'Tajawal', sans-serif;
-    color: white;
     border-bottom: 3px solid black;
     position: fixed;
     top: 0;
@@ -17,8 +16,8 @@ nav {
 
 nav a {
     font-size: 1.5rem;
-    color: navajowhite;
     text-decoration: none;
+    color: navajowhite;
 }
 
 nav .logo {
@@ -45,9 +44,26 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* ********** FORM ********** */
+
+.f-button {
+    background-color: darkred;
+    width: 200px;
+    height: 80px;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    color: navajowhite;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
 /* ********** HEADER ********** */
 
 header {
+    padding-top: 4rem;
+    text-align: center;
+    background-image: url("");
     margin-top: 11vh;
     background-image: url("");
 }
