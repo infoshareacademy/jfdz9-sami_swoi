@@ -156,3 +156,7 @@ header {
 section {
     min-height: 15px;
 }
+
+.f-button{
+    text-align: center;
+}
