@@ -70,39 +70,31 @@ header {
 
 /* ********** FUNCTION ICONS ********** */
 
-.icons {
-    height: 60rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+.functions-container {
+    background: #EEE9D1;
+    max-width: 1000px;
 }
 
 .function-icon {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-}
-
-.function-icon h4 {
-    font-size: 2.5rem;
-    width: 60%;
-    border: solid black;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    border-radius: 3rem;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
     text-align: center;
+    align-self: center;
+    font-size: 60px;
+    margin-bottom: 100px;
+    color: #0A1C28;
 }
 
-.img-icon {
-    margin: 0 auto;
+.function-icon:hover {
+    transform: rotate(360deg);
 }
+
+.function-text {
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+    color: #0A1C28;
+}
+
 
 /* ********** SECTION "O NAS" ********** */
 
