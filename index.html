@@ -19,9 +19,9 @@
 <nav class="container-fluid">
     <div class="logo">|| harujemy.pl</div>
     <ul>
-        <li><a href="#funkcje">funkcje</a></li>
-        <li><a href="#o-nas">o nas</a>
-        <li><a href="#newsletter">newsletter</a></li>
+        <li class="col"><a href="#funkcje">Funkcje</a></li>
+        <li class="col"><a href="#o-nas">O nas</a>
+        <li class="col"><a href="#newsletter">Newsletter</a></li>
     </ul>
 </nav>
 <main>
@@ -56,8 +56,10 @@
     </section>
 
     <section id="o-nas" class="about-us">
-        <article id="daniel">
-            <img class="img" src="img/daniel.jpg" alt="daniel">
+        <article id="daniel" class="row">
+            <div class="row">
+                <img class="img-responsive" src="img/daniel.jpg" alt="daniel">
+            </div>
             <h2>Daniel Luty</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu porta ipsum. Duis venenatis justo nec
                 dictum porta. Integer nunc felis, cursus vel mattis accumsan, hendrerit ac ipsum. Donec scelerisque
@@ -70,8 +72,10 @@
                 ultricies magna.</p>
         </article>
         <hr>
-        <article id="lukasz">
-            <img class="img" src="img/lukasz.jpg" alt="lukasz">
+        <article id="lukasz" class="row">
+            <div class="row">
+                <img class="img-responsive" src="img/lukasz.jpg" alt="lukasz">
+            </div>
             <h2>Łukasz Derek</h2>
             <p>Duis facilisis dui diam, quis porttitor tortor tincidunt ut. Duis vel facilisis dui, a vehicula lacus.
                 Nam molestie justo ligula, ut aliquam velit elementum in. Ut feugiat egestas enim, a aliquet lacus
@@ -83,8 +87,12 @@
                 lobortis placerat sem, dapibus sodales eros faucibus a.
         </article>
         <hr>
-        <article id="marcin">
-            <img class="img" src="img/marcin.jpg" alt="marcin">
+        <article id="marcin" class="row">
+            <div class="row">
+                <div class="col">
+                    <img class="img-responsive" src="img/marcin.jpg" alt="marcin">
+                </div>
+
             <h2>Marcin Sak</h2>
             <p>Cras rhoncus dolor eget orci mattis posuere eu quis magna. Donec tincidunt dolor vitae dui consequat
                 finibus. Pellentesque ultrices ligula quis lobortis cursus. Fusce placerat aliquam risus, sit amet
@@ -93,11 +101,14 @@
                 velit. Sed dui nulla, imperdiet quis vestibulum eu, egestas a lectus. Nullam vel lectus laoreet, euismod
                 nibh a, tempus magna.
         </article>
+        </div>
         <hr>
-        <article id="pawel">
-            <img class="img"
-                 src="https://lh3.googleusercontent.com/xNOfjBNmgbclx14lBT8tpUpBu7gI-kIFNxR5zLIoPKdnTsKJl1HWCcTwCPOOxF07ARFD6NXYnK1BuT8=w296-h297-rw-no"
-                 alt="paweł">
+        <article id="pawel" class="row">
+            <div class="col">
+                <img class="img-responsive"
+                     src="https://lh3.googleusercontent.com/xNOfjBNmgbclx14lBT8tpUpBu7gI-kIFNxR5zLIoPKdnTsKJl1HWCcTwCPOOxF07ARFD6NXYnK1BuT8=w296-h297-rw-no"
+                     alt="paweł">
+            </div>
             <h2 href="https://www.facebook.com">Paweł Rywolt</h2>
             <p>Nulla quis lacinia augue. Duis nunc arcu, commodo id metus in, sollicitudin consectetur dolor. Praesent
                 mauris lorem, lobortis vitae tortor id, accumsan semper elit. Fusce in posuere erat. Morbi molestie

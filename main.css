@@ -4,7 +4,7 @@
     font-family: 'Tajawal', sans-serif;
     position: fixed;
     top: 0;
-    height: 8vh;
+    height: 100px;
     padding-top: .5rem;
     display: flex;
     justify-content: space-between;
@@ -13,9 +13,13 @@
 }
 
 nav a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
-    color: navajowhite;
+    color: #EEE9D1;
+}
+
+.col {
+    margin-top: 20px;
 }
 
 nav .logo {
@@ -47,7 +51,7 @@ nav ul li a:hover {
 .f-button {
     background-color: #0A1C28;
     width: 200px;
-    height: 80px;
+    height: 100px;
     padding: .5rem;
     text-align: center;
     font-family: 'Tajawal', sans-serif;
@@ -105,14 +109,17 @@ header {
 /* ********** SECTION "O NAS" ********** */
 
 .about-us {
-    max-width: 600px;
-    width: 100%;
+    max-width: 1000px;
     margin: 15rem auto;
+    background: #97C0B7;
+    display: flex;
+
 }
 
-.img {
-    width: auto;
-    height: 100%;
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 hr {
@@ -124,9 +131,7 @@ hr {
     margin-bottom: 70px;
 }
 
-section {
-    min-height: 15px;
-}
+
 
 .f-button {
     text-align: center;
