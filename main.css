@@ -1,17 +1,15 @@
 /* ********** NAWIGACJA ********** */
 
-nav {
+.container-fluid {
     font-family: 'Tajawal', sans-serif;
-    border-bottom: 3px solid black;
     position: fixed;
     top: 0;
-    width: 100%;
     height: 8vh;
     padding-top: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: darkred;
+    background: #41848F;
 }
 
 nav a {
@@ -47,7 +45,7 @@ nav ul li a:hover {
 /* ********** FORM ********** */
 
 .f-button {
-    background-color: darkred;
+    background-color: #0A1C28;
     width: 200px;
     height: 80px;
     padding: .5rem;
@@ -112,7 +110,7 @@ h4 {
 
 /* ********** SECTION "O NAS" ********** */
 
-.o-nas {
+.about-us {
     max-width: 600px;
     width: 100%;
     margin: 15rem auto;
