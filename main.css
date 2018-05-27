@@ -71,29 +71,43 @@ header {
 /* ********** FUNCTION ICONS ********** */
 
 .functions-container {
-    background: #EEE9D1;
-    max-width: 1000px;
+    max-width: 900px;
+    margin-top: 3vh;
 }
 
 .function-icon {
     text-align: center;
-    align-self: center;
-    font-size: 60px;
-    margin-bottom: 100px;
+    font-size: 100px;
     color: #0A1C28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
 }
-
-.function-icon:hover {
-    transform: rotate(360deg);
+h4 {
+    background-color: #41848F;
 }
-
 .function-text {
     text-align: center;
     align-self: center;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 100px;
-    color: #0A1C28;
+    background-color: #41848F;
+    border: solid 10px #0A1C28;
+    padding: 5%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin: 3% auto;
+    -webkit-transition: background-color 2s ;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
 }
+ .function-text:hover {
+     background-color: #97C0B7;
+ }
 
 
 /* ********** SECTION "O NAS" ********** */
