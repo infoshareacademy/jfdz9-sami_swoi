@@ -83,6 +83,11 @@ header {
     justify-content: center;
     align-items: center;
     margin: 3% auto;
+    -webkit-transition: color 1s ;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
 }
 h4 {
     background-color: #41848F;
@@ -93,20 +98,20 @@ h4 {
     font-size: 0.9rem;
     font-weight: bold;
     background-color: #41848F;
-    border: solid 10px #0A1C28;
+    border: solid 7px #0A1C28;
     padding: 5%;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
     margin: 3% auto;
-    -webkit-transition: background-color 2s ;
-    -moz-transition: background-color 2s;
-    -ms-transition: background-color 2s;
-    -o-transition: background-color 2s;
-    transition: background-color 2s;
+    -webkit-transition: background-color 1s ;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
 }
  .function-text:hover {
-     background-color: #97C0B7;
+     background-color: #72A7A3;
  }
 
 
