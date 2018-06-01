@@ -89,9 +89,7 @@ header {
     -o-transition: color 1s;
     transition: color 1s;
 }
-h4 {
-    background-color: #41848F;
-}
+
 .function-text {
     text-align: center;
     align-self: center;
