@@ -16,7 +16,7 @@
     <p></p>
     <button class="f-button">Przejdź do formularza</button>
 </header>
-<nav class="container-fluid">
+<nav>
     <div class="logo">|| harujemy.pl</div>
     <ul>
         <li><a href="#funkcje">funkcje</a></li>
@@ -25,27 +25,21 @@
     </ul>
 </nav>
 <main>
-    <div id="funkcje" class="icons">
-        <div class="function-icon">
-            <img class="img-icon" src="icons/czas.png" alt="">
-            <h4>Nie trać czasu na przeglądanie wielu portali!</h4>
+    <div id="functions" class="functions-container container-fluid">
+        <div class="row">
+            <div class="function-icon col-6 col-md-3 order-md-2"><i class="far fa-clock"></i></div>
+            <h4 class="function-text col-6 col-md-3 order-md-1">Nie trać czasu na przeglądanie wielu portali!</h4>
+            <div class="function-icon col-6 col-md-3 order-md-3"><i class="fab fa-searchengin"></i></div>
+            <h4 class="function-text col-6 col-md-3 order-md-4">Zaawansowane wyszukiwanie ofert pracy!</h4>
         </div>
-
-        <div class="function-icon">
-            <img class="img-icon" src="icons/zaawansowane.png" alt="">
-            <h4>Zaawansowane wyszukiwanie ofert pracy!</h4>
-        </div>
-
-        <div class="function-icon">
-            <img class="img-icon" src="icons/czytelne.png" alt="">
-            <h4>Czytelne warunki i wymagania!</h4>
-        </div>
-
-        <div class="function-icon">
-            <img class="img-icon" src="icons/aplikuj.png" alt="">
-            <h4>Aplikuj i przesyłaj swoje CV bezpośrednio do pracodawcy!</h4>
+        <div class="row">
+            <div class="function-icon col-6 col-md-3 order-md-2"><i class="fas fa-clipboard-list"></i></div>
+            <h4 class="function-text col-6 col-md-3 order-md-1">Czytelne warunki i wymagania!</h4>
+            <div class="function-icon col-6 col-md-3 order-md-3"><i class="far fa-share-square"></i></div>
+            <h4 class="function-text col-6 col-md-3 order-md-4">Aplikuj i przesyłaj swoje CV!</h4>
         </div>
     </div>
+
     <section class="function-details">
         <article>
             <h4>Wiele ofert pracy w jednym miejscu !</h4>
@@ -73,7 +67,7 @@
         </article>
     </section>
 
-    <section id="o-nas" class="about-us">
+    <section id="o-nas" class="o-nas">
         <article id="daniel">
             <img class="img" src="img/daniel.jpg" alt="daniel">
             <h2>Daniel Luty</h2>
