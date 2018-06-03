@@ -144,8 +144,21 @@ nav ul li a:hover {
 
 /* ********** SECTION "FUNCTIONS DETAILED ********** */
 
+.function-details {
+    color: black;
+}
+
 .first-row {
     margin-top: 40px;
+}
+
+.function-details-container {
+    text-align: center;
+}
+
+.func-icon {
+    color: #0A1C28;
+    font-size: 4em;
 }
 
 /* ********** SECTION "O NAS" ********** */
