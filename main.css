@@ -145,7 +145,23 @@ nav ul li a:hover {
 /* ********** SECTION "FUNCTIONS DETAILED ********** */
 
 .function-details {
-    color: black;
+    color: white;
+    background-color: #41848F;
+}
+
+.function-details h1 {
+    color: #0A1C28;
+    margin-top: 30px;
+}
+
+.function-details p {
+    color: lightgrey;
+    font-size: 1.1em;
+}
+
+.zero-row {
+    margin-top: 30px;
+    text-align: center;
 }
 
 .first-row {
@@ -156,9 +172,14 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.function-details-container h4 {
+    font-size: 1.6em;
+}
+
 .func-icon {
     color: #0A1C28;
     font-size: 4em;
+
 }
 
 /* ********** SECTION "O NAS" ********** */
