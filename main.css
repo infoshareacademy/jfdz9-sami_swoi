@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 /* ********** HEADER ********** */
 
-.showcase {
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg");
 ) background-position: - 400 px;
     height: 100vh;
@@ -74,15 +74,15 @@ nav ul li a:hover {
     color: whitesmoke;
 }
 
-.showcase h1 {
+.hero h1 {
     font-size: 50px;
 }
 
-.showcase p {
+.hero p {
     font-size: 20px;
 }
 
-.showcase .button {
+.hero .button {
     font-size: 22px;
     text-decoration: none;
     color: whitesmoke;
@@ -92,7 +92,7 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.showcase .button:hover {
+.hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
 }
