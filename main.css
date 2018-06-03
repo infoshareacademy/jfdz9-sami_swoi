@@ -84,6 +84,7 @@ header {
 .function-icon {
     width: 70%;
     display: flex;
+<<<<<<< Updated upstream
     flex-direction: row;
     align-self: center;
 }
@@ -104,22 +105,61 @@ header {
 
 .img-icon {
     margin: 0 auto;
+=======
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+h4 {
+    background-color: #41848F;
+}
+
+.function-text {
+    text-align: center;
+    align-self: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #41848F;
+    border: solid 7px #0A1C28;
+    padding: 5%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin: 3% auto;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.function-text:hover {
+    background-color: #72A7A3;
+>>>>>>> Stashed changes
 }
 
 /* ********** SECTION "O NAS" ********** */
 
-.about-us {
-    max-width: 1000px;
-    margin: 15rem auto;
-    background: #97C0B7;
-    display: flex;
-
+.aboutus {
+    background: #f8f9fa;
 }
 
-.img-responsive {
-    width: 100%;
-    height: auto;
-    display: block;
+.my-4 {
+    text-align: center;
+}
+
+.rounded-circle {
+    box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+.name {
+    padding-top: 20px;
 }
 
 hr {
