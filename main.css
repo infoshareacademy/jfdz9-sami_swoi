@@ -1,15 +1,15 @@
 /* ********** NAWIGACJA ********** */
 
-.container-fluid {
+nav {
     font-family: 'Tajawal', sans-serif;
+    border-bottom: 3px solid black;
     position: fixed;
     top: 0;
-    height: 100px;
     padding-top: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #41848F;
+    background: darkred;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav ul li a:hover {
 /* ********** FORM ********** */
 
 .f-button {
-    background-color: #0A1C28;
+    background-color: darkred;
     width: 200px;
     height: 100px;
     padding: .5rem;
@@ -62,50 +62,113 @@ nav ul li a:hover {
 
 /* ********** HEADER ********** */
 
-header {
-    padding-top: 4rem;
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg");
+) background-position: - 400 px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
     text-align: center;
-    background-image: url("");
-    margin-top: 11vh;
-    background-image: url("");
+    color: whitesmoke;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero .button {
+    font-size: 22px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: whitesmoke 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero .button:hover {
+    background: #0A1C28;
+    color: whitesmoke;
 }
 
 /* ********** FUNCTION ICONS ********** */
 
-.icons {
-    height: 60rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+.functions-container {
+    max-width: 900px;
+    margin-top: 3vh;
 }
 
 .function-icon {
-    width: 70%;
+    text-align: center;
+    font-size: 100px;
+    color: #0A1C28;
     display: flex;
-<<<<<<< Updated upstream
     flex-direction: row;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
 }
 
-.function-icon h4 {
-    font-size: 2.5rem;
-    width: 60%;
-    border: solid black;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    border-radius: 3rem;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
+.function-text {
+    text-align: center;
+    align-self: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #41848F;
+    border: solid 7px #0A1C28;
+    padding: 5%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin: 3% auto;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.function-text:hover {
+    background-color: #72A7A3;
+}
+
+/* ********** SECTION "FUNCTIONS DETAILED ********** */
+
+.function-details {
+    color: white;
+    background-color: #41848F;
+}
+
+.function-details h1 {
+    color: #0A1C28;
+    margin-top: 30px;
+}
+
+.function-details p {
+    color: lightgrey;
+    font-size: 1.1em;
+}
+
+.zero-row {
+    margin-top: 30px;
     text-align: center;
 }
 
 .img-icon {
     margin: 0 auto;
-=======
     justify-content: center;
     align-items: center;
     margin: 3% auto;
@@ -141,10 +204,26 @@ h4 {
 
 .function-text:hover {
     background-color: #72A7A3;
->>>>>>> Stashed changes
+}
+.first-row {
+    margin-top: 40px;
+}
+
+.function-details-container {
+    text-align: center;
+}
+
+.function-details-container h4 {
+    font-size: 1.6em;
+}
+
+.func-icon {
+    color: #0A1C28;
+    font-size: 4em;
 }
 
 /* ********** SECTION "O NAS" ********** */
+
 
 .aboutus {
     background: #f8f9fa;
@@ -152,6 +231,7 @@ h4 {
 
 .my-4 {
     text-align: center;
+
 }
 
 .rounded-circle {
