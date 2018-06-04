@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg");
-) background-position: - 400 px;
+) background-position: -400px;
     height: 100vh;
     display: flex;
     flex-direction: column;
