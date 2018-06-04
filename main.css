@@ -1,7 +1,7 @@
 /* ********** NAWIGACJA ********** */
 
-main > * {
-    padding: 100px 0 0;
+main > *{
+    padding: 50px 0 0;
 }
 
 .navi {
@@ -52,6 +52,7 @@ main > * {
     list-style-type: none;
     text-decoration: none;
 }
+
 .navi-ul li {
     background-color: #fff;
     color: rgb(65, 132, 143);
@@ -62,9 +63,11 @@ main > * {
     border-radius: 2px;
     font-weight: 600;
 }
+
 .navi-ul li a:hover {
     color: #41848F;
 }
+
 .navi-ul a {
     color: #41848F;
     text-decoration: none;
@@ -75,29 +78,22 @@ main > * {
     .navi-logo {
         letter-spacing: 5px;
     }
+
     .navi-ul li {
         width: 70px;
     }
 }
 
 
-@media screen and (max-width: 799px) {
-    .my-4 {
-        padding-top: 100px;
-    }
-}
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
     .navi {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 10px;
         height: 50px;
     }
-    main > * {
-        padding-top: 51px;
-    }
 }
+
 /* ********** FORM ********** */
 
 .f-button {
@@ -257,6 +253,7 @@ h4 {
 .function-text:hover {
     background-color: #72A7A3;
 }
+
 .first-row {
     margin-top: 40px;
 }
@@ -275,7 +272,6 @@ h4 {
 }
 
 /* ********** SECTION "O NAS" ********** */
-
 
 .aboutus {
     background: #f8f9fa;
@@ -301,8 +297,6 @@ hr {
     margin-top: 70px;
     margin-bottom: 70px;
 }
-
-
 
 .f-button {
     text-align: center;
