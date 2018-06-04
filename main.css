@@ -183,10 +183,15 @@ main > * {
 }
 
 /* ********** FUNCTION ICONS ********** */
+main {
+    background: #CACBD5;
+
+}
 
 .functions-container {
     max-width: 900px;
-    margin-top: 3vh;
+    padding-top: 3vh;
+    background: #CDCBD5;
 }
 
 .function-icon {
@@ -205,12 +210,12 @@ main > * {
     transition: color 1s;
 }
 
-.function-text {
+.function-texts {
     text-align: center;
     align-self: center;
     font-size: 0.9rem;
     font-weight: bold;
-    background-color: #41848F;
+    background-color: #666F89;
     border: solid 7px #0A1C28;
     padding: 5%;
     -webkit-border-radius: 25px;
@@ -224,15 +229,15 @@ main > * {
     transition: background-color 1s;
 }
 
-.function-text:hover {
-    background-color: #72A7A3;
+.function-texts:hover {
+    background-color: #D55E2D;
 }
 
 /* ********** SECTION "FUNCTIONS DETAILED ********** */
 
 .function-details {
     color: white;
-    background-color: #41848F;
+    background-color: #666F89;
 }
 
 .function-details h1 {
@@ -262,7 +267,7 @@ main > * {
 }
 
 h4 {
-    background-color: #41848F;
+    background-color: #666F89;
 }
 
 .function-text {
