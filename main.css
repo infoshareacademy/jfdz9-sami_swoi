@@ -112,15 +112,17 @@ main > * {
 }
 
 .f-button {
-    background-color: #41848F;
     width: 145px;
     height: 50px;
     font-family: 'Tajawal', sans-serif;
-    color: navajowhite;
+    text-decoration: underline;
+    background-color: beige;
+    color: #41848F;
     font-size: 1.6rem;
     letter-spacing: 7px;
     padding: 9px 0 0 10px;
     font-weight: 700;
+    border: 3px solid #41848F;
 }
 
 .fa-arrow-right {
@@ -305,8 +307,9 @@ h4 {
 
 /* ********** SECTION "O NAS" ********** */
 
-.aboutus {
+.container.aboutus {
     background: #f8f9fa;
+    height: calc(100%-20px);
 }
 
 .my-4 {
