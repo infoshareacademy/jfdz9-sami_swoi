@@ -15,7 +15,7 @@ main > * {
     top: 0;
     width: 100%;
     padding: 5px 0 10px;
-    background-color: rgba(65, 132, 143, .95);
+    background-color: #666F89;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
@@ -36,7 +36,7 @@ main > * {
 
 .navi-logo span {
     background-color: #fff;
-    color: rgb(65, 132, 143);
+    color: #666F89;
     padding: 5px 3px 3px 12px;
     border-radius: 20px;
     border-bottom-right-radius: 0;
@@ -55,7 +55,7 @@ main > * {
 
 .navi-ul li {
     background-color: #fff;
-    color: rgb(65, 132, 143);
+    color: #666F89;
     width: 120px;
     padding: 2px;
     margin: 0 15px;
@@ -69,7 +69,7 @@ main > * {
 }
 
 .navi-ul a {
-    color: #41848F;
+    color: #666F89;
     text-decoration: none;
 
 }
