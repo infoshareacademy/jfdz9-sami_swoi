@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HARUJEMY.pl</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -28,6 +29,14 @@
         do newslettera, aby dowiedzieć się więcej.</p>
     <a href="#newsletter" class="button">Dołącz do nas</a>
 </header>
+<nav class="navi">
+    <a href="#" class="navi-logo">haruJemy<span>.pL</span></a>
+    <ul class="navi-ul">
+        <li><a href="#functions">funkcje</a></li>
+        <li><a href="#offert">oferta</a></li>
+        <li><a href="#about-us">o nas</a></li>
+    </ul>
+</nav>
 <main>
     <div id="functions" class="functions-container container-fluid">
         <div class="row">
@@ -44,7 +53,7 @@
         </div>
     </div>
 
-    <section class="function-details">
+    <section id="offert" class="function-details">
         <div class="container-fluid">
             <div class="row zero-row">
                 <div class="col-12">
@@ -128,7 +137,8 @@
                         </div>
                         <h4 class="function-details-subtitle">Mobilne poszukiwanie
                             pracy </h4>
-                        <p class="function-details-text">Dzięki wykorzystaniu podejścia MobileFirst będziesz mógł
+                        <p id="about-us" class="function-details-text">Dzięki wykorzystaniu podejścia MobileFirst
+                            będziesz mógł
                             przeglądać oferty
                             pracy gdziekolwiek jesteś. Bez różnicy czy robisz to na laptopie, tablecie bądź
                             smartfonie.</p>
@@ -191,9 +201,15 @@
                     większość wolnego czasu poświęcam na naukę programowania.</p>
             </div>
         </div>
-
     </div>
-    <form id="newsletter"><input type="email"> <-- Wpisz swojego Maila.</form>
+
+        <form id="newsletter">
+            <i class="fas fa-arrow-right"></i>
+            <input title="email" type="email" placeholder="Wpisz swojego maila a dowiesz się więcej.">
+            <button class="f-button">Wyślij</button>
+            <i class="fas fa-arrow-left"></i>
+        </form>
+
 </main>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
         integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
