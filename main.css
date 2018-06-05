@@ -74,6 +74,12 @@ main > * {
 
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .navi-logo {
         letter-spacing: 5px;
