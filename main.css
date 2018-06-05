@@ -316,11 +316,12 @@ h4 {
     font-size: 4em;
 }
 
-/* ********** SECTION "O NAS" ********** */
+/* ********** SECTION "About us" ********** */
 
 .container.aboutus {
     background: #f8f9fa;
     height: calc(100%-20px);
+
 }
 
 .my-4 {
