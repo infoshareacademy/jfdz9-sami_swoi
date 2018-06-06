@@ -245,6 +245,7 @@ main {
 .function-details {
     color: white;
     background-color: #666F89;
+    padding-bottom: 4rem;
 }
 
 .function-details h1 {
@@ -255,6 +256,10 @@ main {
 .function-details p {
     color: lightgrey;
     font-size: 1.1em;
+}
+
+.function-details-text {
+    margin-bottom: 4rem;
 }
 
 .zero-row {
