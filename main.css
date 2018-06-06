@@ -226,16 +226,18 @@ h4 {
 
 
 .aboutus {
-    background: #f8f9fa;
+    background: #FFFFFF;
 
 }
 
-.my-4 {
+.team {
     text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .rounded-circle {
-    box-shadow: 0 5px 5px 0 #adb5bd;
+    box-shadow: 0 5px 10px 0 #adb5bd;
 }
 
 .icon_1 {
