@@ -152,8 +152,7 @@ main > * {
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg");
-) background-position: - 400 px;
-    background-repeat: no-repeat;
+) background-position: -400px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -163,6 +162,12 @@ main > * {
     text-align: center;
     color: whitesmoke;
     background-position: center;
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        height: 680px;
+    }
 }
 
 .hero h1 {
@@ -183,10 +188,12 @@ main > * {
     margin-top: 20px;
 }
 
+
 .hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
 }
+
 
 /* ********** FUNCTION ICONS ********** */
 main {
