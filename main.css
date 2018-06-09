@@ -1,10 +1,7 @@
 /* ********** NAWIGACJA ********** */
+/* ********** NAWIGACJA ********** */
 
-main > * {
-    padding: 50px 0 0;
-}
-
-.navi {
+.nav {
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -13,28 +10,29 @@ main > * {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
-    padding: 5px 0 10px;
+    right: 0;
+    width: 100vw;
+    padding: 5px 0 0 0;
     background-color: #666F89;
     color: #fff;
-    border-bottom: 1px solid #fff;
 }
 
-.navi-logo {
-    font-size: 1.7rem;
+.nav-logo {
+    font-size: 1.5rem;
     font-family: sans-serif;
     font-weight: 600;
     color: #fff;
     letter-spacing: 15px;
     padding: .5rem;
+    margin-bottom: 3px;
     text-decoration: underline;
 }
 
-.navi-logo:hover {
+.nav-logo:hover {
     color: #fff;
 }
 
-.navi-logo span {
+.nav-logo span {
     background-color: #fff;
     color: #666F89;
     padding: 5px 3px 3px 12px;
@@ -44,83 +42,78 @@ main > * {
     letter-spacing: 2px;
 }
 
-.navi-ul {
-    font-size: 1.1rem;
+.nav-ul {
+    font-size: 1rem;
     padding: 0;
     margin: 0;
-    display: flex;
     list-style-type: none;
     text-decoration: none;
 }
 
-.navi-ul li {
-    background-color: #fff;
-    color: #666F89;
-    width: 120px;
-    padding: 2px;
-    margin: 0 15px;
+.nav-ul li {
+    margin-bottom: 18px;
     text-align: center;
-    border-radius: 2px;
     font-weight: 600;
 }
 
-.navi-ul li a:hover {
+.nav-ul li a:hover {
     color: #41848F;
 }
 
-.navi-ul li a {
+.nav-ul li a {
+    background-color: #fff;
     color: #666F89;
     text-decoration: none;
-
+    padding: 8px 20px;
+    border-radius: 2px;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        width: 100vw;
-    }
-}
 
-@media screen and (max-width: 460px) {
-    .navi-logo {
-        letter-spacing: 5px;
-    }
-
-    .navi-ul li {
-        width: 70px;
-    }
-}
 
 @media screen and (min-width: 800px) {
-    .navi {
+    .nav {
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         padding: 0 10px;
         height: 50px;
+    }
+    .nav-logo {
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .nav-ul {
+        display: flex;
+    }
+    .nav-ul li {
+        margin: 0 0 0 20px;
     }
 }
 
 /* ********** FORM ********** */
 
 #newsletter {
+    width: 100%;
+    padding-bottom: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #newsletter input {
     padding-left: .7rem;
-    margin-right: 1rem;
-    width: 350px;
+    margin-bottom: 1rem;
+    width: 200px;
     height: 45px;
     font-weight: 600;
     border: 3px solid #666F89;
 }
 
 .f-button {
-    width: 145px;
+    width: 160px;
     height: 50px;
     font-family: 'Tajawal', sans-serif;
-    text-decoration: underline;
     background-color: beige;
     color: #666F89;
     font-size: 1.6rem;
@@ -131,6 +124,7 @@ main > * {
 }
 
 .fa-arrow-right {
+    display: none;
     width: 40px;
     font-size: 3.2rem;
     padding: 5px 7px;
@@ -140,12 +134,28 @@ main > * {
 }
 
 .fa-arrow-left {
+    display: none;
     width: 40px;
     font-size: 3.2rem;
     padding: 5px 7px;
     margin-left: 18px;
     background-color: #666F89;
     color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+    #newsletter {
+        flex-direction: row;
+    }
+
+    #newsletter input {
+        margin: 0 1rem 0 0;
+    }
+
+    .fa-arrow-right, .fa-arrow-left {
+        display: block;
+    }
+
 }
 
 /* ********** HEADER ********** */
@@ -162,6 +172,13 @@ main > * {
     text-align: center;
     color: whitesmoke;
     background-position: center;
+    margin-top: 52px;
+}
+
+@media screen and (min-width: 800px) {
+    .hero {
+        margin-top: 49px;
+    }
 }
 
 @media screen and (max-width: 800px) {
