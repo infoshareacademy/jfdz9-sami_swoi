@@ -22,9 +22,9 @@
     padding: 0;
     margin: 0;
     background: -moz-linear-gradient(top, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #666f89 1%,#7a86a3 57%,#7a86a3 57%,#7a86a3 78%,#7a86a3 78%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #666f89 1%,#7a86a3 57%,#7a86a3 57%,#7a86a3 78%,#7a86a3 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666f89', endColorstr='#7a86a3',GradientType=0 ); /* IE6-9 */
+    background: -webkit-linear-gradient(top, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666f89', endColorstr='#7a86a3', GradientType=0); /* IE6-9 */
 }
 
 #toggle:checked + .menu {
@@ -40,7 +40,7 @@
     color: #fff;
     padding: .8rem 0 .4rem;
     cursor: pointer;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     transition: all 1s;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
@@ -99,18 +99,22 @@
     .label {
         display: none;
     }
+
     .nav {
         height: 28px;
         margin-top: 0;
         border-bottom: 0;
     }
+
     .hero {
         margin-top: 25px;
     }
+
     .nav-logo {
         padding-left: 17px;
         font-size: 1.3rem;
     }
+
     #toggle:checked + .menu {
         display: flex;
     }
@@ -271,15 +275,28 @@ main {
 
 .functions-container {
     max-width: 900px;
-    padding-top: 5vh;
+    padding-top: 60px;
     background: white;
 }
 
-.functions-container:hover .function-icon {
-    color: #4682B4;
+.function-icon .svg-inline--fa {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.function-icon .svg-inline--fa:hover {
+    color: #7b9df3;
     -webkit-transition: scale(1.3);
     -moz-transform: scale(1.3);
     transform: scale(1.3);
+}
+
+.functions-container h1 {
+    color: #0A1C28;
+    text-align: center;
+    font-weight: bold;
 }
 
 .function-icon {
@@ -291,9 +308,6 @@ main {
     justify-content: center;
     align-items: center;
     margin: 3% auto;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    transition: color 1s;
 }
 
 .function-texts {
@@ -403,14 +417,13 @@ h4 {
 }
 
 .func-icon .svg-inline--fa {
-    transition: color .5s, transform .4s;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    cursor: pointer;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
 }
 
 .func-icon .svg-inline--fa:hover {
-    color: #1E90FF;
+    color: #7b9df3;
     -webkit-transition: scale(1.3);
     -moz-transform: scale(1.3);
     transform: scale(1.3);
