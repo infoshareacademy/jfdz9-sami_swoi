@@ -1,9 +1,9 @@
 $(function(){
     if( $(window).width() <= 767 ) {
-        $('#menu li a').on("click", function(){
+        $('#menu li a').click(function(e){
             $('#menu').slideUp();
         });
-        $('.label').on("click", function(){
+        $('#label').click(function(e){
             $('#menu').slideToggle();
         });
     }
