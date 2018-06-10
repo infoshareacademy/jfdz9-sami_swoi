@@ -459,6 +459,14 @@ h4 {
     padding-top: 20px;
 }
 
+.newsletter {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: ;
+    position: center;
+}
+
+
 hr {
     width: 40%;
     height: 1px;
@@ -470,4 +478,15 @@ hr {
 
 .f-button {
     text-align: center;
+}
+
+
+.newsletter {
+    background: url('img/wood.jpg');
+}
+
+/* FOOTER */
+
+.py-3 {
+    background: #3D4252;
 }
