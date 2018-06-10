@@ -52,7 +52,7 @@
 
 .label {
     position: absolute;
-    top: 12px;
+    top: 10px;
     right: 8px;
     margin: 0;
     font-size: 2.5rem;
@@ -71,7 +71,7 @@
     font-weight: 600;
     color: #fff;
     letter-spacing: 5px;
-    padding: 4px .3rem;
+    padding: 6px 0 3px 8px;
     text-decoration: underline;
 }
 
@@ -111,7 +111,7 @@
     }
 
     .nav-logo {
-        padding: 13px 0 0 12px;
+        padding: 23px 0 0 12px;
         font-size: 1.5rem;
     }
 
@@ -129,20 +129,20 @@
 
     .menu li {
         border: none;
+        margin-right: 1rem;
     }
 
     .menu li a {
         font-size: 1rem;
         font-weight: bold;
         letter-spacing: 10px;
-        padding: .8rem 1rem;
+        padding: .7rem 1.5rem;
         border-bottom: none;
         text-decoration: none;
     }
 
     .menu li a:hover {
         border-radius: 0 0 4px 4px;
-        line-height: 30px;
     }
 
 }
