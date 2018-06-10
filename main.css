@@ -9,7 +9,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    padding: 5px 0 0;
+    padding: 0;
     background-color: #666F89;
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -30,14 +30,13 @@
 #toggle:checked + .menu {
     display: block;
 }
-.menu li {
 
-}
 .menu li a {
     position: relative;
     display: block;
     font-family: 'Molengo', cursive;
     font-size: 1.2rem;
+    text-align: center;
     color: #fff;
     padding: .8rem 0 .4rem;
     cursor: pointer;
@@ -102,7 +101,7 @@
     }
 
     .nav {
-        height: 28px;
+        height: 40px;
         margin-top: 0;
         border-bottom: 0;
     }
@@ -112,8 +111,8 @@
     }
 
     .nav-logo {
-        padding-left: 17px;
-        font-size: 1.3rem;
+        padding: 13px 0 0 12px;
+        font-size: 1.5rem;
     }
 
     #toggle:checked + .menu {
@@ -125,7 +124,6 @@
         align-items: center;
         padding: 0;
         width: auto;
-        line-height: 30px;
         background: none;
     }
 
@@ -134,17 +132,16 @@
     }
 
     .menu li a {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: bold;
         letter-spacing: 10px;
-        padding: .2rem 1rem 0;
-        margin: 0 0 0 .2rem;
+        padding: .8rem 1rem;
         border-bottom: none;
         text-decoration: none;
     }
 
     .menu li a:hover {
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 4px 4px;
         line-height: 30px;
     }
 
