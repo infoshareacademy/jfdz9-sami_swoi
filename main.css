@@ -30,13 +30,14 @@
 #toggle:checked + .menu {
     display: block;
 }
+.menu li {
 
+}
 .menu li a {
     position: relative;
     display: block;
     font-family: 'Molengo', cursive;
     font-size: 1.2rem;
-    text-align: center;
     color: #fff;
     padding: .8rem 0 .4rem;
     cursor: pointer;
