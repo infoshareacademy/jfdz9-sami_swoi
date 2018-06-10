@@ -99,7 +99,14 @@
     .label {
         display: none;
     }
-
+    .nav {
+        height: 28px;
+        margin-top: 0;
+        border-bottom: 0;
+    }
+    .hero {
+        margin-top: 25px;
+    }
     .nav-logo {
         padding-left: 17px;
         font-size: 1.3rem;
@@ -113,7 +120,7 @@
         align-items: center;
         padding: 0;
         width: auto;
-        line-height: 40px;
+        line-height: 30px;
         background: none;
     }
 
@@ -122,17 +129,17 @@
     }
 
     .menu li a {
-        font-size: 1.2rem;
+        font-size: .8rem;
         font-weight: bold;
         letter-spacing: 10px;
         padding: .2rem 1rem 0;
-        margin: 0 .4rem; 0 .2rem;
+        margin: 0 0 0 .2rem;
         border-bottom: none;
         text-decoration: none;
     }
 
     .menu li a:hover {
-        border-radius: 50px;
+        border-radius: 0 0 10px 10px;
         line-height: 30px;
     }
 
@@ -222,12 +229,6 @@
     padding: 70px 20px 0;
     text-align: center;
     color: whitesmoke;
-    margin-top: 50px;
-}
-
-@media screen and (min-width: 800px) {
-    .hero {
-    }
 }
 
 @media screen and (max-width: 800px) {
