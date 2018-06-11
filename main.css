@@ -264,7 +264,28 @@
 
 /* ********** FUNCTION ICONS ********** */
 
+.functions-content {
+    width: 100%;
+    max-width: 900px;
+}
 
+.functions-header {
+    width: 30%;
+    text-align: center;
+    margin: 50px auto;
+    font-weight: bold;
+}
+
+.functions-content-subcontainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.functions-imgs {
+    width: 100%;
+    height: 100%;
+}
 
 /*main {*/
     /*background: white;*/
