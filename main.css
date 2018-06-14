@@ -263,76 +263,55 @@
 }
 
 /* ********** FUNCTION ICONS ********** */
-main {
-    background: white;
-}
 
-.container-fluid.functions-container {
-    margin: 0 auto;
-}
-
-.functions-container {
+.functions-content {
+    width: 100%;
     max-width: 900px;
-    padding-top: 60px;
-    background: white;
 }
 
-.function-icon {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
-    cursor: pointer;
-}
-
- .functions-container:hover .function-icon {
-    color: #7b9df3;
-    -webkit-transition: scale(1.3);
-    -moz-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.functions-container h1 {
-    color: #0A1C28;
+.functions-header {
+    width: 100%;
     text-align: center;
+    margin: 50px auto;
     font-weight: bold;
 }
 
-.function-icon {
-    text-align: center;
-    font-size: 100px;
-    color: #0A1C28;
+.functions-content-subcontainers {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 3% auto;
+    margin: 10% auto;
 }
 
-.function-texts {
+.functions-content-subcontainers:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.functions-content-subcontainers:hover .functions-imgs {
+    transform: rotateY(180deg);
+}
+
+.functions-imgs {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: transform 1.5s ease-in-out;
+    -moz-transition: transform 1.5s ease-in-out;
+    -ms-transition: transform 1.5s ease-in-out;
+    -o-transition: transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out;
+}
+
+.functions-text {
+    font-family: 'Molengo', cursive;
+    font-size: 2.5rem;
     text-align: center;
-    align-self: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    background-color: #CDCBD5;
-    border: solid 7px #0A1C28;
-    padding: 5%;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    margin: 3% auto;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    transition: background-color 1s;
 }
 
-.function-texts:hover {
-    background-color: #0A1C28;
-    color: #4682B4;
-}
-
-.top-row {
-    padding-top: 1rem;
-}
 
 /* ********** SECTION "FUNCTIONS DETAILED ********** */
 
