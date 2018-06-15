@@ -299,8 +299,10 @@
     <div class="container-fluid newsletter">
         <form id="newsletter">
             <i class="fas fa-arrow-right"></i>
-            <input title="email" type="email" placeholder="Wpisz maila !">
-            <button class="f-button">Wyślij</button>
+            <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
+            <input title="email" type="email" placeholder="... i maila !" required>
+            <button type="submit" class="f-button">Wyślij</button>
+            <button type="reset" class="f-button">Reset</button>
             <i class="fas fa-arrow-left"></i>
         </form>
         <span>* Wysyłamy oczywiście tylko jednego maila z informacją o premierze strony.
