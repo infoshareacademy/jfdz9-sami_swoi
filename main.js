@@ -11,14 +11,6 @@ $(function(){
     }
 });
 
-/*$( document ).ready(function() {
-    $(".label").click(function() {
-        $("#menu").slideToggle(function() {
-            $("#menu").show();
-        });
-    });
-}*/
-
 /* **********GO UP BUTTON********** */
 
 window.onscroll = function() {scrollFunction()};
