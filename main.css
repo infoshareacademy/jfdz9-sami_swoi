@@ -271,7 +271,7 @@
 .functions-header {
     width: 100%;
     text-align: center;
-    margin: 50px auto;
+    padding-top: 50px;
     font-weight: bold;
 }
 
@@ -289,7 +289,7 @@
 }
 
 .functions-content-subcontainers:hover .functions-imgs {
-    transform: rotateY(180deg);
+    transform: scale(1.1);
 }
 
 .functions-imgs {
@@ -298,11 +298,11 @@
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    -webkit-transition: transform 1.5s ease-in-out;
-    -moz-transition: transform 1.5s ease-in-out;
-    -ms-transition: transform 1.5s ease-in-out;
-    -o-transition: transform 1.5s ease-in-out;
-    transition: transform 1.5s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .functions-text {
