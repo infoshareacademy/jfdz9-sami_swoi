@@ -271,7 +271,7 @@
 .functions-header {
     width: 100%;
     text-align: center;
-    margin: 50px auto;
+    padding-top: 50px;
     font-weight: bold;
 }
 
