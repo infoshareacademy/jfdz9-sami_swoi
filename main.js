@@ -12,6 +12,9 @@ $(function(){
     $('.nav-logo').on('click', function(){
         $('#menu').slideUp();
     });
+    $('#myBtn').on('click', function(){
+        $('#menu').slideUp();
+    });
 });
 
 /* **********GO UP BUTTON********** */
