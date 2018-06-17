@@ -9,6 +9,9 @@ $(function(){
             $('#menu').slideToggle();
         });
     }
+    $('.nav-logo').on('click', function(){
+        $('#menu').slideUp();
+    });
 });
 
 /* **********GO UP BUTTON********** */
