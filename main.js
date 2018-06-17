@@ -9,15 +9,13 @@ $(function(){
             $('#menu').slideToggle();
         });
     }
-});
-
-/*$( document ).ready(function() {
-    $(".label").click(function() {
-        $("#menu").slideToggle(function() {
-            $("#menu").show();
-        });
+    $('.nav-logo').on('click', function(){
+        $('#menu').slideUp();
     });
-}*/
+    $('#myBtn').on('click', function(){
+        $('#menu').slideUp();
+    });
+});
 
 /* **********GO UP BUTTON********** */
 
