@@ -1,150 +1,76 @@
 /* ********** NAWIGACJA ********** */
 
-.nav {
-    z-index: 10;
+.body .navbar {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar .navbar-brand {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 0;
-    background-color: #666F89;
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-}
-
-.menu {
-    list-style-type: none;
-    width: 100%;
-    display: none;
-    padding: 0;
-    margin: 0;
-    background: -moz-linear-gradient(top, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #666f89 1%, #7a86a3 57%, #7a86a3 57%, #7a86a3 78%, #7a86a3 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666f89', endColorstr='#7a86a3', GradientType=0); /* IE6-9 */
-}
-
-#toggle:checked + .menu {
-    display: block;
-}
-
-.menu li a {
-    position: relative;
-    display: block;
-    font-family: 'Molengo', cursive;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #fff;
-    padding: .8rem 0 .4rem;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all 1s;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-}
-
-.menu li a:hover {
-    color: #666F89;
-    background-color: #fff;
-}
-
-.label {
-    position: absolute;
-    top: 10px;
-    right: 8px;
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 38px;
-}
-
-#toggle {
-    display: none;
-}
-
-.nav-logo {
-    font-size: 1.6rem;
     font-family: 'Special Elite', cursive;
-    font-weight: 600;
-    color: #fff;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+.body .navbar .navbar-toggler {
+    position: relative;
+    top: -1px;
+    font-size: 1.1rem;
+    padding: 5px 7px 4px;
+    color: #071416;
+    background-color: rgba(255,255,255,.8);
+}
+
+.menu-toggler::after {
+    content: "\25be";
+    position: relative;
+    top: -1px;
+}
+
+.navbar-nav {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    padding: .5rem 0;
+    border-top: 1px solid rgba(255,255,255,.5);
+}
+.nav-item:first-of-type {
+    margin-top: .7rem;
+}
+.nav-item:last-of-type {
+    padding-bottom: 0;
+}
+
+.nav-link {
+    font-family: 'Special Elite', cursive;
     letter-spacing: 5px;
-    padding: 6px 0 3px 8px;
-    text-decoration: underline;
-}
-
-.nav-logo:hover {
-    color: #fff;
-}
-
-.nav-logo span {
-    background-color: #fff;
-    color: #666F89;
-    padding: 5px 3px 3px 12px;
-    border-radius: 20px 20px 0 20px;
-    text-decoration: underline;
-    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 576px) {
-    .menu li a {
-        padding-left: 15rem;
-        letter-spacing: 6px;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    .label {
-        display: none;
+    .body .navbar {
+        padding-bottom: 0;
+        margin-right: .5rem;
     }
-
-    .nav {
-        height: 40px;
-        margin-top: 0;
-        border-bottom: 0;
+    .navbar .navbar-brand::before {
+        content: "-";
     }
-
-    .hero {
-        margin-top: 25px;
+    .navbar .navbar-brand::after {
+        content: "-";
     }
-
-    .nav-logo {
-        padding: 23px 0 0 12px;
-        font-size: 1.5rem;
-    }
-
-    #toggle:checked + .menu {
-        display: flex;
-    }
-
-    .menu {
-        display: flex !important;
-        align-items: center;
-        padding: 0;
-        width: auto;
-        background: none;
-    }
-
-    .menu li {
+    .nav-item {
         border: none;
-        margin-right: 1rem;
+        margin-left: 2rem;
     }
-
-    .menu li a {
-        font-size: 1rem;
-        font-weight: bold;
-        letter-spacing: 10px;
-        padding: .7rem 1.5rem;
-        border-bottom: none;
-        text-decoration: none;
+    .nav-item:first-of-type {
+        margin-top: 0;
     }
-
-    .menu li a:hover {
-        border-radius: 0 0 4px 4px;
-    }
-
 }
 
 /* ********** FORM ********** */
