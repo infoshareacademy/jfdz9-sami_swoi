@@ -1,20 +1,11 @@
 /* **********NAVIGATION********** */
 
-$(function(){
-    if( $(window).width() <= 767 ) {
-        $('#menu li a').click(function(e){
-            $('#menu').slideUp();
-        });
-        $('#label').click(function(e){
-            $('#menu').slideToggle();
-        });
-    }
-    $('.nav-logo').on('click', function(){
-        $('#menu').slideUp();
-    });
-    $('#myBtn').on('click', function(){
-        $('#menu').slideUp();
-    });
+$('.nav-link').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
+$('#myBtn').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
 });
 
 /* **********GO UP BUTTON********** */
