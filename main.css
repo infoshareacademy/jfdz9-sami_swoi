@@ -9,6 +9,7 @@
 .body .navbar {
     padding-bottom: .5rem;
     border-bottom: 1px solid #fff;
+    transition: height .7s;
 }
 
 .navbar .navbar-brand {
@@ -17,6 +18,10 @@
     font-family: 'Special Elite', cursive;
     font-size: 1.4rem;
     padding: 0;
+}
+
+.navbar .navbar-brand img {
+    width: 150px;
 }
 
 .body .navbar .navbar-toggler {
@@ -63,14 +68,12 @@
     .body .navbar {
         padding-bottom: 0;
         padding-right: .5rem;
+        transition: height .7s;
     }
 
-    .navbar .navbar-brand::before {
-        content: "-";
-    }
-
-    .navbar .navbar-brand::after {
-        content: "-";
+    .navbar .navbar-brand img {
+        width: 250px;
+        padding-bottom: 10px;
     }
 
     .nav-item {
@@ -92,36 +95,34 @@
     .navbar .navbar-brand {
         font-size: 2.3rem;
     }
+
+    .navbar .navbar-brand img {
+        width: 350px;
+        padding-bottom: 10px;
+    }
+
     .navbar-nav {
-        font-size: 1.6rem;
         padding-right: 1rem;
     }
     .nav-item {
         margin-left: 4rem;
     }
+    .nav-link {
+        font-size: 1.7rem;
+    }
 
     /* **************************** SHRINK NAV ****/
     /* ********************************************/
-    nav.navbar.shrink {
-        min-height: 35px;
-    }
-    .navbar-brand {font-size: 25px;}
-    a {
-        font-size: 15px;
-        padding-bottom: 10px !important;
-        padding-top: 10px !important;
-    }
-    .navbar-toggle {
-        margin: 8px 15px 8px 0;
-        padding: 4px 5px;
+    .shrink {
+        height: 60px !important;
+        transition: height .7s;
     }
 }
 
-}
 
 /* **************************************************** HEADER *********************** */
 /***************************************************************************************/
-header.hero {
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg") center;
     height: 100vh;
     display: flex;
@@ -131,12 +132,6 @@ header.hero {
     padding: 70px 20px 0;
     text-align: center;
     color: whitesmoke;
-}
-
-@media screen and (max-width: 800px) {
-    .hero {
-        height: 680px;
-    }
 }
 
 .hero h1 {

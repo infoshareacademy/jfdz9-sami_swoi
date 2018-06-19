@@ -9,14 +9,15 @@ $('#myBtn').on('click', function(){
 });
 
 /* *****************SHRINKING NAV ON SCROLL**** */
-
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('nav').addClass('shrink');
-    } else {
-        $('nav').removeClass('shrink');
-    }
-});
+$(document).ready(function () {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.navbar').addClass('shrink');
+        } else {
+            $('.navbar').removeClass('shrink');
+        }
+    });
+})
 
 /* *****************GO UP BUTTON*************** */
 
