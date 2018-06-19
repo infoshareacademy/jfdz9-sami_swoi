@@ -1,4 +1,4 @@
-/* **********NAVIGATION********** */
+/* *****************NAVIGATION***************** */
 
 $('.nav-link').on('click', function(){
     $('.navbar-collapse').collapse('hide');
@@ -8,7 +8,18 @@ $('#myBtn').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-/* **********GO UP BUTTON********** */
+/* *****************SHRINKING NAV ON SCROLL**** */
+$(document).ready(function () {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.navbar').addClass('shrink');
+        } else {
+            $('.navbar').removeClass('shrink');
+        }
+    });
+})
+
+/* *****************GO UP BUTTON*************** */
 
 window.onscroll = function() {scrollFunction()};
 
@@ -24,3 +35,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+/* *****************SMOOTH SCROLLING*********** */
+
+var scroll = new SmoothScroll('a[href*="#"]');
+
+
