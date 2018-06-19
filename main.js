@@ -1,4 +1,4 @@
-/* **********NAVIGATION********** */
+/* *****************NAVIGATION********** */
 
 $('.nav-link').on('click', function(){
     $('.navbar-collapse').collapse('hide');
@@ -8,7 +8,11 @@ $('#myBtn').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-/* **********GO UP BUTTON********** */
+/* *****************SMOOTH SCROLLING**** */
+
+var scroll = new SmoothScroll('a[href*="#"]');
+
+/* *****************GO UP BUTTON******** */
 
 window.onscroll = function() {scrollFunction()};
 
