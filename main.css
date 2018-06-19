@@ -121,7 +121,7 @@
 
 /* **************************************************** HEADER *********************** */
 /***************************************************************************************/
-.hero {
+header.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg") center;
     height: 100vh;
     display: flex;
@@ -232,6 +232,7 @@
 
 .function-details-container h4 {
     font-size: 1.6em;
+    background-color: #666F89;
 }
 
 .function-details p {
@@ -255,10 +256,6 @@
     -webkit-transition: color 1s;
     -moz-transition: color 1s;
     transition: color 1s;
-}
-
-h4 {
-    background-color: #666F89;
 }
 
 .first-row {
