@@ -93,6 +93,7 @@
     .body .navbar {
         height: 5rem;
     }
+
     .navbar .navbar-brand {
         font-size: 2.3rem;
     }
@@ -105,9 +106,11 @@
     .navbar-nav {
         padding-right: 1rem;
     }
+
     .nav-item {
         margin-left: 4rem;
     }
+
     .nav-link {
         font-size: 1.7rem;
     }
@@ -120,8 +123,7 @@
     }
 }
 
-
-/* **************************************************** HEADER *********************** */
+/* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background-3.jpeg") center;
@@ -160,6 +162,11 @@
 
 /* **************************************************** SECTION "Functions" ********** */
 /***************************************************************************************/
+
+.functions {
+    padding-top: 1rem;
+}
+
 .functions-content {
     width: 100%;
     max-width: 900px;
@@ -304,88 +311,78 @@
     padding-top: 20px;
 }
 
-hr {
-    width: 40%;
-    height: 1px;
-    color: darkblue;
-    background-color: darkblue;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
 .f-button {
     text-align: center;
 }
 
-/* **************************************************** FORM ************************* */
+/* ***************************************************      FOOTER      ************** */
 /***************************************************************************************/
-#newsletter {
-    width: 100%;
-    min-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer {
+    padding: 1rem 1rem 0;
 }
 
-#newsletter input {
-    max-width: 200px;
-    height: 45px;
-    font-weight: 600;
-    border: 3px solid #666F89;
-    padding-left: 10px;
+.footer div {
+    display: flex;
+    flex-direction: column;
 }
 
 .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
     text-align: center;
-    padding: 0 0 2rem;
     background: url("img/footer-background.jpg") center;
 }
 
-#newsletter > * {
-    margin: .5rem;
+.newsletter-input-section {
+    display: flex;
+    flex-direction: column;
 }
 
-.newsletter span {
+.newsletter-input-section > * {
+    margin: .5rem 0;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
+    box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
+}
+.newsletter-paragraph-section {
+}
+
+.newsletter input {
+    text-align: center;
+    max-width: 150px;
+}
+
+.newsletter button {
+    height: 35px;
+    max-width: 110px;
+    font-family: 'Tajawal', sans-serif;
+    color: #666F89;
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+    font-weight: 700;
+    margin: .5rem auto;
+}
+
+.newsletter p {
     font-size: 1.2rem;
     padding-top: 1rem;
     color: #fff;
-    line-height: .4rem;
 }
 
-.f-button {
-    max-width: 160px;
-    height: 50px;
-    font-family: 'Tajawal', sans-serif;
-    background-color: beige;
-    color: #666F89;
-    font-size: 1.6rem;
-    letter-spacing: 7px;
-    padding: 9px 0 0 10px;
-    font-weight: 700;
-    border: 3px solid #666F89;
-}
-
-.fa-arrow-right, .fa-arrow-left {
-    display: none;
-    max-width: 40px;
-    font-size: 3.2rem;
-    padding: 5px 7px;
-    background-color: #666F89;
-    color: #fff;
-    border: 3px solid #fff;
-}
-
-@media screen and (min-width: 662px) {
-    #newsletter {
-        flex-direction: row;
+@media screen and (min-width: 576px) {
+    .row.newsletter-input-section {
+        flex-flow: row nowrap;
+    }
+    .row.newsletter-input-section > * {
+        margin: .5rem .5rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .fa-arrow-right, .fa-arrow-left {
-        display: inline-block;
-    }
+
 }
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
