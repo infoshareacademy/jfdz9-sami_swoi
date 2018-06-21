@@ -6,6 +6,10 @@
 
 /* **************************************************** NAVIGATION ******************* */
 /***************************************************************************************/
+body {
+    font-family: Montserrat;
+}
+
 .body .navbar {
     padding-bottom: .5rem;
     border-bottom: 1px solid #fff;
@@ -216,7 +220,6 @@
 }
 
 .functions-text {
-    font-family: 'Molengo', cursive;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -225,12 +228,12 @@
 /***************************************************************************************/
 .function-details {
     color: white;
-    background-color: #666F89;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/thought-catalog-354861-unsplash.jpg");
+    background-size: cover;
     padding-bottom: 4rem;
 }
 
 .function-details h1 {
-    color: #0A1C28;
     margin: 4rem 0 0;
     font-weight: bold;
 }
@@ -241,7 +244,6 @@
 
 .function-details-container h4 {
     font-size: 1.6em;
-    background-color: #666F89;
 }
 
 .function-details p {
@@ -272,7 +274,6 @@
 }
 
 .func-icon {
-    color: #0A1C28;
     font-size: 4em;
     cursor: pointer;
     transition: all 1s;
@@ -364,7 +365,6 @@
 .newsletter button {
     height: 35px;
     max-width: 110px;
-    font-family: 'Tajawal', sans-serif;
     color: #666F89;
     font-size: 1.5rem;
     letter-spacing: 7px;
