@@ -68,7 +68,7 @@
 @media only screen and (min-width: 768px) {
     .body .navbar {
         padding-bottom: 0;
-        padding-right: .5rem;
+        padding-right: .4rem;
         transition: height .7s;
     }
 
@@ -79,7 +79,12 @@
 
     .nav-item {
         border: none;
-        margin-left: 2rem;
+        margin-left: .6rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        font-size: .9rem;
     }
 
     .nav-item:first-of-type {
@@ -108,11 +113,11 @@
     }
 
     .nav-item {
-        margin-left: 4rem;
+        margin-left: 2rem;
     }
 
     .nav-link {
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 
     /* **************************** SHRINK NAV ****/
