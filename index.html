@@ -19,7 +19,7 @@
 <nav id="main-nav" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
     <a class="navbar-brand nav-link" href="#"><img src="img/harujemy_beztła-01.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="menu-toggler">menu </span>
+        <span class="menu-toggler">menu </span>
     </button>
     <div id="navbarResponsive" class="collapse navbar-collapse">
         <ul id="menu" class="nav navbar-nav ml-auto">
@@ -32,6 +32,9 @@
             <li class="nav-item">
                 <a href="#about-us" class="nav-link">o nas</a>
             </li>
+            <li class="nav-item">
+                <a href="#newsletter" class="nav-link">newsletter</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -43,12 +46,9 @@
     <a href="#newsletter" class="button">Dołącz do nas</a>
 </header>
 <main>
-    <section id="functions" class="functions"
-
-        <h1 class="functions-header">Dlaczego my ?</h1>
-
+    <section id="functions" class="functions">
+        <h2 class="functions-header">Dlaczego my ?</h2>
         <div class="functions-content container">
-
             <div class="row functions-content-subcontainers">
                 <div class="col-12 col-md-6">
                     <img class="functions-imgs" src="img/time-waste.jpeg" alt="">
@@ -298,20 +298,24 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid newsletter">
-        <form id="newsletter">
-            <i class="fas fa-arrow-right"></i>
-            <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
-            <input title="email" type="email" placeholder="... i maila !" required>
-            <button type="submit" class="f-button">Wyślij</button>
-            <button type="reset" class="f-button">Reset</button>
-            <i class="fas fa-arrow-left"></i>
-        </form>
-        <span>* Wysyłamy oczywiście tylko jednego maila z informacją o premierze strony.
-            Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</span>
-    </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
 </main>
+<footer class="footer container-fluid">
+    <div class="row">
+        <form id="newsletter" class="newsletter container-fluid">
+            <div class="row newsletter-input-section">
+                <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
+                <input title="email" type="email" placeholder="... i maila !" required>
+                <button type="submit">Wyślij</button>
+                <button type="reset">Reset</button>
+            </div>
+            <p class="row newsletter-paragraph-section">* Wysyłamy oczywiście tylko jednego maila z informacją o
+                premierze strony.
+                Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.
+            </p>
+        </form>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
