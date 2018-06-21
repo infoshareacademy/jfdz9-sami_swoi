@@ -10,18 +10,18 @@
     padding-bottom: .5rem;
     border-bottom: 1px solid #fff;
     transition: height .7s;
+    font-family: Montserrat;
 }
 
 .navbar .navbar-brand {
     display: flex;
     align-items: center;
-    font-family: 'Special Elite', cursive;
     font-size: 1.4rem;
     padding: 0;
 }
 
 .navbar .navbar-brand img {
-    width: 150px;
+    width: 250px;
 }
 
 .body .navbar .navbar-toggler {
@@ -58,9 +58,10 @@
 }
 
 .nav-link {
-    font-family: 'Special Elite', cursive;
     letter-spacing: 5px;
+    font-weight: bold;
 }
+
 
 /* ******************************** NAV MIN 768 ***/
 /* ************************************************/
