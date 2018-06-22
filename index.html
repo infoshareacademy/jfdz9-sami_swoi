@@ -46,7 +46,7 @@
 </header>
 <main>
     <section id="functions" class="functions">
-        <h1 class="functions-header">Dlaczego my?</h1>
+        <h1 class="functions-header letterspacing">DLACZEGO MY?</h1>
 
         <div class="functions-content container">
             <div class="row functions-content-subcontainers">
@@ -87,7 +87,7 @@
         <div class="container-fluid">
             <div class="row zero-row">
                 <div class="col-12">
-                    <h1 class="offert">Co oferujemy?</h1>
+                    <h1 class="offert letterspacing">CO OFERUJEMY?</h1>
                 </div>
             </div>
             <div class="row first-row">
@@ -178,7 +178,7 @@
         </div>
     </section>
     <section id="about-us" class="container-fluid aboutus">
-        <h1 class="team">Poznaj nasz zespół!
+        <h1 class="team letterspacing">POZNAJ NASZ ZESPÓŁ!
         </h1>
         <div class="row">
             <div class="col-lg-3 col-sm-6 text-center mb-4">
@@ -299,23 +299,26 @@
         </div>
     </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    <container class="footer container-fluid">
+        <div class="row">
+            <form id="newsletter" class="newsletter bg-warning container-fluid">
+                <div class="row newsletter-input-section">
+                    <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
+                    <input title="email" type="email" placeholder="... i maila !" required>
+                    <button type="submit">Wyślij</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <p class="row newsletter-paragraph-section">* Wysyłamy oczywiście tylko jednego maila z informacją o
+                    premierze strony.
+                    Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.
+                </p>
+            </form>
+        </div>
+    </container>
+
 </main>
-<footer class="footer container-fluid">
-    <div class="row">
-        <form id="newsletter" class="newsletter container-fluid">
-            <div class="row newsletter-input-section">
-                <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
-                <input title="email" type="email" placeholder="... i maila !" required>
-                <button type="submit">Wyślij</button>
-                <button type="reset">Reset</button>
-            </div>
-            <p class="row newsletter-paragraph-section">* Wysyłamy oczywiście tylko jednego maila z informacją o
-                premierze strony.
-                Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.
-            </p>
-        </form>
-    </div>
-</footer>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
