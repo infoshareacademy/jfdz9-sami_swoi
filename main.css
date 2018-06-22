@@ -12,7 +12,7 @@ body {
 
 .body .navbar {
     padding-bottom: .5rem;
-    /*border-bottom: 1px solid #fff;*/
+    border-bottom: 2px solid #fff;
     transition: height .7s;
     font-family: Montserrat;
 }
