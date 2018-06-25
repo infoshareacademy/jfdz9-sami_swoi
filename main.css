@@ -399,26 +399,42 @@ body {
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
-#myBtn {
+#topBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #111;
+    background-color: #ffc107;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 10px;
+    border-radius: 35px;
+    border: 1px solid #007bff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-#myBtn:hover {
-    background-color: #555;
+#topBtn:hover {
+    /*background-color: #007bff;*/
+    box-shadow: 30px 30px 30px 30px #007bff inset;
+}
+#topBtn:hover > .topBtn-text {
+    color: #ffc107;
 }
 
-.letterspacing {
-    letter-spacing: 0.05rem;
+.topBtn-text {
+    font-size: 30px;
+    color: #007bff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
+

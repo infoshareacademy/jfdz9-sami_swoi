@@ -4,7 +4,7 @@ $('.nav-link').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-$('#myBtn').on('click', function(){
+$('#topBtn').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
@@ -25,9 +25,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("topBtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("topBtn").style.display = "none";
     }
 }
 
