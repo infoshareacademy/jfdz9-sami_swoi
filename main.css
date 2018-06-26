@@ -410,11 +410,11 @@ body {
     padding: 10px;
     border-radius: 20px;
     border: 0;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: box-shadow 0.8s ease-in-out;
+    -moz-transition: box-shadow 0.8s ease-in-out;
+    -ms-transition: box-shadow 0.8s ease-in-out;
+    -o-transition: box-shadow 0.8s ease-in-out;
+    transition: box-shadow 0.8s ease-in-out;
 }
 
 
