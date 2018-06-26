@@ -4,7 +4,7 @@ $('.nav-link').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-$('#myBtn').on('click', function(){
+$('#topBtn').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
@@ -17,24 +17,26 @@ $(document).ready(function () {
             $('.navbar').removeClass('shrink');
         }
     });
-})
+});
 
 /* *****************GO UP BUTTON*************** */
 
-window.onscroll = function() {scrollFunction()};
+$(document).ready(function(){
 
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 10) {
+            $('#topBtn').fadeIn('slow');
+        } else {
+            $('#topBtn').fadeOut('slow');
+        }
+    });
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+    $('#topBtn').click(function(){
+        $('html, body').animate({scrollTop: 0},800);
+        return false;
+    });
+
+});
 
 /* *****************SMOOTH SCROLLING*********** */
 

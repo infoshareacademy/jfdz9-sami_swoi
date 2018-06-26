@@ -399,26 +399,31 @@ body {
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
-#myBtn {
+#topBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #111;
-    color: white;
+    background-color: lightgrey;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    -webkit-transition: box-shadow 0.8s ease-in-out;
+    -moz-transition: box-shadow 0.8s ease-in-out;
+    -ms-transition: box-shadow 0.8s ease-in-out;
+    -o-transition: box-shadow 0.8s ease-in-out;
+    transition: box-shadow 0.8s ease-in-out;
 }
 
-#myBtn:hover {
-    background-color: #555;
+
+#topBtn:hover {
+    box-shadow: 30px 30px 30px 30px #ffc107 inset;
 }
 
-.letterspacing {
-    letter-spacing: 0.05rem;
+.topBtn-text {
+    font-size: 30px;
+    color: black;
 }
+
