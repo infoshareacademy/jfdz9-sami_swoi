@@ -405,13 +405,11 @@ body {
     bottom: 10px;
     right: 10px;
     z-index: 99;
-    outline: none;
-    background-color: #ffc107;
-    color: white;
+    background-color: lightgrey;
     cursor: pointer;
     padding: 10px;
-    border-radius: 35px;
-    border: 1px solid #007bff;
+    border-radius: 20px;
+    border: 0;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
@@ -421,19 +419,11 @@ body {
 
 
 #topBtn:hover {
-    box-shadow: 30px 30px 30px 30px #007bff inset;
-}
-#topBtn:hover > .topBtn-text {
-    color: #ffc107;
+    box-shadow: 30px 30px 30px 30px #ffc107 inset;
 }
 
 .topBtn-text {
     font-size: 30px;
-    color: #007bff;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    color: black;
 }
 

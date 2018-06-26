@@ -24,15 +24,15 @@ $(document).ready(function () {
 $(document).ready(function(){
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('#topBtn').fadeIn();
+        if ($(this).scrollTop() > 1) {
+            $('#topBtn').fadeIn('slow');
         } else {
-            $('#topBtn').fadeOut();
+            $('#topBtn').fadeOut('slow');
         }
     });
 
-    $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
+    $('#topBtn').click(function(){
+        $('html, body').animate({scrollTop: 0},800);
         return false;
     });
 
