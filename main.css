@@ -9,32 +9,38 @@ body {
 
 }
 
+.nav-link:hover {color: #4286f4;}
+
 /* **************************************************** NAVIGATION ******************* */
 /***************************************************************************************/
 
 .body .navbar {
-    padding-bottom: .5rem;
-    border-bottom: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
     transition: height .6s;
+    padding: .2rem 0 1rem;
 }
 
-.navbar .navbar-brand {
+.body .navbar-brand {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
     padding: 0;
+    margin: 0;
 }
 
-.navbar .navbar-brand img {
-    width: 250px;
+.body .navbar-brand img {
+    width: 280px;
     transition: width .6s;
 }
 
-.body .navbar .navbar-toggler {
+.navbar .navbar-toggler {
     position: relative;
-    top: -1px;
-    font-size: 1.1rem;
-    padding: 5px 7px 4px;
+    top: 1px;
+    font-weight: bolder;
+    padding: 7px 7px 4px;
     color: #071416;
     background-color: rgba(255, 255, 255, .8);
 }
@@ -67,11 +73,29 @@ body {
     letter-spacing: 5px;
     font-weight: bold;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .active {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    transition: text-shadow .5s;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+
+/* ******************************* NAV MIN 418 ****/
+/* ************************************************/
+
+@media only screen and (min-width: 410px) {
+    .body .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: .3rem;
+    }
+    .navbar .navbar-brand img {
+        width: 220px;
+    }
+    .navbar .navbar-toggler {
+        margin-right: 1rem;
+    }
 }
 
 /* ******************************* NAV MIN 768 ****/
@@ -79,51 +103,79 @@ body {
 @media only screen and (min-width: 768px) {
     .body .navbar {
         padding-bottom: 0;
-        padding-right: .4rem;
         transition: height .7s;
     }
 
-    .navbar .navbar-brand img {
-        padding-bottom: 10px;
+    .navbar-brand img {
     }
 
     .nav-item {
         border: none;
-        margin-left: .6rem;
     }
 
     .navbar-nav {
         text-align: center;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .nav-item:first-of-type {
         margin-top: 0;
+    }
+
+    .active {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: none;
+    }
+    .active::before {
+        position: relative;
+        content: "Ξ";
+        opacity: .65;
+        font-size: .9rem;
+        transition: all 4s;
+    }
+}
+
+/* ******************************* NAV MIN 850 ****/
+/* ************************************************/
+
+@media only screen and (min-width: 850px) {
+    .body .nav-item {
+        padding-right: 1rem;
+    }
+    .body .nav-item .nav-link {
+        padding-bottom: .2rem;
+    }
+    .active::before {
+        bottom: -2px;
     }
 }
 
 /* ******************************* NAV MIN 992 ****/
 /* ************************************************/
 @media only screen and (min-width: 992px) {
-    .body .navbar {
+    .navbar {
         height: 5rem;
+
     }
 
-    .navbar .navbar-brand {
+    .navbar-brand {
         font-size: 2.3rem;
     }
 
-    .navbar .navbar-brand img {
-        width: 350px;
-        padding-bottom: 10px;
+    .body .navbar-brand img {
+        width: 320px;
+        padding-bottom: 5px;
     }
 
     .navbar-nav {
-        padding-right: 1rem;
     }
 
     .nav-item {
-        margin-left: 2rem;
+        margin-left: 1rem;
+        padding: 0 0 2px 0;
     }
 
     .nav-link {
