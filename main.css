@@ -15,7 +15,7 @@ body {
 .body .navbar {
     padding-bottom: .5rem;
     border-bottom: 2px solid #fff;
-    transition: height .7s;
+    transition: height .6s;
 }
 
 .navbar .navbar-brand {
@@ -27,6 +27,7 @@ body {
 
 .navbar .navbar-brand img {
     width: 250px;
+    transition: width .6s;
 }
 
 .body .navbar .navbar-toggler {
@@ -83,7 +84,6 @@ body {
     }
 
     .navbar .navbar-brand img {
-        width: 250px;
         padding-bottom: 10px;
     }
 
@@ -133,7 +133,7 @@ body {
     /* **************************** SHRINK NAV ****/
     /* ********************************************/
     .shrink {
-        height: 60px !important;
+        height: 55px !important;
         transition: height .7s;
     }
 
@@ -185,7 +185,7 @@ body {
 /***************************************************************************************/
 
 .functions {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .functions h1 {
@@ -242,7 +242,7 @@ body {
                 rgba(0, 0, 0, 0.5)),
                 url("img/thought-catalog-354861-unsplash.jpg");
     background-size: cover;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .offer h1 {
@@ -285,7 +285,7 @@ body {
 .about-us {
     background: #f8f9fa;
     height: calc(100% - 20px);
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .about-us h1 {

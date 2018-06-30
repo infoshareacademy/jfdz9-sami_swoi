@@ -14,8 +14,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
             $('.navbar').addClass('shrink');
+            $('.navbar-brand img').css('width','220px');
         } else {
             $('.navbar').removeClass('shrink');
+            $('.navbar-brand img').css('width','');
         }
     });
 });
@@ -86,6 +88,20 @@ $(window).scroll(function () {
 
 /* ************************************ SMOOTH SCROLLING *** */
 
+$('a[href^="#"]').on('click', function(event) {
+    let target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 600);
+    }
+});
+
+$("#logo").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
 
 /* **************************************** GO UP BUTTON *** */
 
