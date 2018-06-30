@@ -1,20 +1,21 @@
 /* **************************************************** MAIN ************************* */
 /***************************************************************************************/
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
 @media only screen and (min-width: 992px) {
 
 }
 
 /* **************************************************** NAVIGATION ******************* */
 /***************************************************************************************/
-body {
-    font-family: Montserrat;
-}
 
 .body .navbar {
     padding-bottom: .5rem;
     border-bottom: 2px solid #fff;
     transition: height .7s;
-    font-family: Montserrat;
 }
 
 .navbar .navbar-brand {
@@ -67,8 +68,7 @@ body {
     cursor: pointer;
 }
 
-
-/* ******************************** NAV MIN 768 ***/
+/* ******************************* NAV MIN 768 ****/
 /* ************************************************/
 @media only screen and (min-width: 768px) {
     .body .navbar {
@@ -97,7 +97,7 @@ body {
     }
 }
 
-/* ******************************** NAV MIN 992 ***/
+/* ******************************* NAV MIN 992 ****/
 /* ************************************************/
 @media only screen and (min-width: 992px) {
     .body .navbar {
@@ -130,6 +130,12 @@ body {
     .shrink {
         height: 60px !important;
         transition: height .7s;
+    }
+
+    /* ***************** NAV LINK HIGHLIGHTING ****/
+    /* ********************************************/
+    .active {
+
     }
 }
 
@@ -176,19 +182,18 @@ body {
 /***************************************************************************************/
 
 .functions {
-    padding-top: 1rem;
+    padding-top: 4rem;
+}
+
+.functions h1 {
+    font-weight: bold;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .functions-content {
     width: 100%;
     max-width: 900px;
-}
-
-.functions-header {
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
-    font-weight: bold;
 }
 
 .functions-content-subcontainers {
@@ -211,15 +216,12 @@ body {
 .functions-imgs {
     width: 100%;
     height: 100%;
+    border: 3px solid #00173D;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 15px;
-    border-color: #00173D;
-    border-style: solid;
     -webkit-transition: transform 1s ease-in-out;
     -moz-transition: transform 1s ease-in-out;
-    -ms-transition: transform 1s ease-in-out;
-    -o-transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
 }
 
@@ -228,59 +230,39 @@ body {
     text-align: center;
 }
 
-/* **************************************************** SECTION "Offert" ************* */
+/* **************************************************** SECTION "Offer" ************* */
 /***************************************************************************************/
 
-
-.function-details {
+.offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/thought-catalog-354861-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.5)),
+                url("img/thought-catalog-354861-unsplash.jpg");
     background-size: cover;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 4rem 0;
 }
 
-.function-details h1 {
-   font-weight: bold;
-    padding-bottom: 5rem;
-}
-
-.function-details-container {
+.offer h1 {
+    font-weight: bold;
+    padding: 4rem 0;
     text-align: center;
 }
 
-.function-details-container h4 {
+.offer-details {
+    text-align: center;
+}
+
+.offer-details h4 {
     font-size: 1.6em;
 }
 
-.function-details p {
+.offer-details p {
     color: lightgrey;
     font-size: 1.1em;
-}
-
-.function-details-text {
     margin-bottom: 2rem;
 }
 
-.zero-row {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.img-icon {
-    justify-content: center;
-    align-items: center;
-    margin: 3% auto;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    transition: color 1s;
-}
-
-.first-row {
-    margin-top: 40px;
-}
-
-.func-icon {
+.offer-icon {
     font-size: 4em;
     cursor: pointer;
     transition: all 1s;
@@ -288,7 +270,7 @@ body {
     -moz-transition: all 1s;
 }
 
-.function-details-container:hover .func-icon {
+.offer-details:hover .func-icon {
     color: #7b9df3;
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
@@ -297,12 +279,13 @@ body {
 
 /* **************************************************** SECTION "About Us" *********** */
 /***************************************************************************************/
-.container.aboutus {
+.about-us {
     background: #f8f9fa;
     height: calc(100% - 20px);
+    padding: 4rem 0;
 }
 
-.team {
+.about-us h1 {
     font-weight: bold;
     text-align: center;
     padding: 4rem 0;
@@ -312,10 +295,6 @@ body {
     box-shadow: 0 5px 10px 0 #adb5bd;
 }
 
-.mb-4 {
-    padding-bottom: 6rem;
-}
-
 .icon_1 {
     color: black;
 }
@@ -323,10 +302,6 @@ body {
 .name {
     font-weight: bold;
     padding-top: 20px;
-}
-
-.f-button {
-    text-align: center;
 }
 
 /* ***************************************************      FOOTER      ************** */
@@ -356,10 +331,11 @@ body {
 
 .newsletter-input-section > * {
     margin: .5rem 0;
-    -webkit-box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
-    -moz-box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
-    box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
 }
+
 .newsletter-paragraph-section {
 }
 
@@ -388,6 +364,7 @@ body {
     .row.newsletter-input-section {
         flex-flow: row nowrap;
     }
+
     .row.newsletter-input-section > * {
         margin: .5rem .5rem;
     }
@@ -412,11 +389,8 @@ body {
     border: 0;
     -webkit-transition: box-shadow 0.8s ease-in-out;
     -moz-transition: box-shadow 0.8s ease-in-out;
-    -ms-transition: box-shadow 0.8s ease-in-out;
-    -o-transition: box-shadow 0.8s ease-in-out;
     transition: box-shadow 0.8s ease-in-out;
 }
-
 
 #topBtn:hover {
     box-shadow: 30px 30px 30px 30px #ffc107 inset;
