@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -14,9 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>HARUJEMY.PL</title>
 </head>
-<body id="body" class="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="body" class="body">
+
+<!--/********** Navigation *********/-->
+
 <nav id="main-nav" class="navbar bg-warning navbar-expand-md fixed-top">
-    <a class="navbar-brand nav-link" href="#"><img src="img/harujemy_beztła-01.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img id="logo" src="img/harujemy_beztła-01.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="menu-toggler">menu </span>
     </button>
@@ -26,7 +29,7 @@
                 <a href="#functions" class="nav-link">FUNKCJE</a>
             </li>
             <li class="nav-item">
-                <a href="#offert" class="nav-link">OFERTA</a>
+                <a href="#offer" class="nav-link">OFERTA</a>
             </li>
             <li class="nav-item">
                 <a href="#about-us" class="nav-link">O NAS</a>
@@ -37,95 +40,96 @@
         </ul>
     </div>
 </nav>
+
+<!--/************ Header ***********/-->
+
 <header class="hero container-fluid">
     <h1>Szukanie pracy nigdy nie było prostsze</h1>
     <p>Niezależnie, czy szukasz wymarzonej pracy, czy ludzi do swojego zespołu - nasza aplikacja Ci w tym pomoże.<br>
         Dołącz
         do newslettera, aby dowiedzieć się więcej.</p>
-    <a href="#newsletter" class="button">Dołącz do nas</a>
+    <a href="#newsletter" class="button scroll">Dołącz do nas</a>
 </header>
+
+<!--/************* Main ************/-->
+
 <main>
     <section id="functions" class="functions">
-        <h1 class="functions-header letterspacing">DLACZEGO MY?</h1>
-
-        <div class="functions-content container">
+        <h1>DLACZEGO MY?</h1>
+        <div class="container functions-content">
             <div class="row functions-content-subcontainers">
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <img class="functions-imgs" src="img/time-waste.jpeg" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <p class="functions-text">Nie trać czasu na przeglądanie wielu portali!</p>
                 </div>
             </div>
             <div class="row functions-content-subcontainers">
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <img class="functions-imgs" src="img/searching.jpeg" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <p class="functions-text">Zaawansowane wyszukiwanie ofert pracy!</p>
                 </div>
             </div>
             <div class="row functions-content-subcontainers">
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <img class="functions-imgs" src="img/clear-requirements.jpeg" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <p class="functions-text">Czytelne warunki i wymagania!</p>
                 </div>
             </div>
             <div class="row functions-content-subcontainers">
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <img class="functions-imgs" src="img/send-cv.jpeg" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-md-6">
                     <p class="functions-text">Aplikuj i przesyłaj swoje CV!</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="offert" class="function-details">
+    <section id="offer" class="offer">
+        <h1>CO OFERUJEMY?</h1>
         <div class="container-fluid">
-            <div class="row zero-row">
-                <div class="col-12">
-                    <h1 class="offert letterspacing">CO OFERUJEMY?</h1>
-                </div>
-            </div>
-            <div class="row first-row">
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fas fa-folder-open"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Wiele ofert pracy w
+                        <h4>Wiele ofert pracy w
                             jednym miejscu </h4>
-                        <p class="function-details-text">Dzięki naszej aplikacji nie musisz już przeglądać wielu portali
+                        <p>Dzięki naszej aplikacji nie musisz już przeglądać wielu portali
                             w
                             poszukiwaniu wymarzonej posady.
                             Wszystkie oferty możesz przegladać u nas, dostępne w jednym miejscu.</p>
                     </article>
                 </div>
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fas fa-mouse-pointer"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Zaawansowane opcje
+                        <h4>Zaawansowane opcje
                             selekcjonowania ofert </h4>
-                        <p class="function-details-text">W naszej aplikacji nie zobaczysz ofert, które Cię nie
+                        <p>W naszej aplikacji nie zobaczysz ofert, które Cię nie
                             interesują. Dzięki
                             zastosowaniu zaawansowanej wyszukiwarki możesz jasno określić czego oczekujesz od przyszłej
                             pracy.
                             Przedstawione oferty zostaną w pełni dostosowane do Twoich oczekiwań. </p>
                     </article>
                 </div>
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fab fa-wpforms"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Oferty pracy w pełni
+                        <h4>Oferty pracy w pełni
                             czytelne i jasne </h4>
-                        <p class="function-details-text">Wszystkie ogłoszenia w naszej aplikacji przechodzą przez
+                        <p>Wszystkie ogłoszenia w naszej aplikacji przechodzą przez
                             specjalny
                             formularz publikacji, dlatego nie musisz się martwić czy ogłoszenie będzie posiadało
                             wszystkie niezbędne
@@ -134,40 +138,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fas fa-address-book"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Możliwość aplikacji
+                        <h4>Możliwość aplikacji
                             bezpośrednio z ogłoszenia </h4>
-                        <p class="function-details-text">W naszej aplikacji instnieje możliwość aplikacji na stanowiska
+                        <p>W naszej aplikacji instnieje możliwość aplikacji na stanowiska
                             bezpośrednio
                             z ogłosznia. Nie musisz tracić czasu na szukanie danych kontaktowych, oraz możesz być pewny
                             że Twoje CV
                             trafi w odpowiednie miejsce.</p>
                     </article>
                 </div>
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fas fa-columns"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Specjalny panel dla
+                        <h4>Specjalny panel dla
                             pracodawców </h4>
-                        <p class="function-details-text">U nas każdy pracodawca może zarejestrować się swój panelu
+                        <p>U nas każdy pracodawca może zarejestrować się swój panelu
                             administracyjnym
                             w celu łatwiejszej publikacji i edycji ogłoszeń.</p>
                     </article>
                 </div>
-                <div class="col-12 col-md-4">
-                    <article class="function-details-container">
-                        <div class="func-icon">
+                <div class="col-md-4">
+                    <article class="offer-details">
+                        <div class="offer-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h4 class="function-details-subtitle">Mobilne poszukiwanie
+                        <h4>Mobilne poszukiwanie
                             pracy </h4>
-                        <p class="function-details-text">Dzięki wykorzystaniu podejścia MobileFirst
+                        <p>Dzięki wykorzystaniu podejścia MobileFirst
                             będziesz mógł
                             przeglądać oferty
                             pracy gdziekolwiek jesteś. Bez różnicy czy robisz to na laptopie, tablecie bądź
@@ -177,9 +181,8 @@
             </div>
         </div>
     </section>
-    <section id="about-us" class="container-fluid aboutus">
-        <h1 class="team letterspacing">POZNAJ NASZ ZESPÓŁ!
-        </h1>
+    <section id="about-us" class="container-fluid about-us">
+        <h1 class="team letterspacing">POZNAJ NASZ ZESPÓŁ!</h1>
         <div class="row">
             <div class="col-lg-3 col-sm-6 text-center mb-4">
                 <img class="rounded-circle img-fluid" src="img/daniel_1.jpg" alt="daniel">
@@ -232,7 +235,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" class="icon_1" href="www.google.pl">
+                        <a target="_blank" class="icon_1" href="https://www.google.pl">
                             <i class="fas fa-user-circle fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -302,22 +305,25 @@
         <i class="topBtn-text fas fa-angle-double-up"></i>
     </button>
 </main>
+
+<!--/************ Footer ***********/-->
+
 <footer class="footer container-fluid">
     <div class="row">
         <form id="newsletter" class="newsletter bg-warning container-fluid">
             <div class="row newsletter-input-section">
-                <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required>
-                <input title="email" type="email" placeholder="... i maila !" required>
+                <input title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required="">
+                <input title="email" type="email" placeholder="... i maila !" required="">
                 <button type="submit">Wyślij</button>
                 <button type="reset">Reset</button>
             </div>
             <p class="row newsletter-paragraph-section">* Wysyłamy oczywiście tylko jednego maila z informacją o
-                premierze strony.
-                Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.
-            </p>
+                premierze strony. Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</p>
         </form>
     </div>
 </footer>
+
+<!--/************ Scripts **********/-->
 
 <script src="jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
