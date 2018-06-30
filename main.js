@@ -1,5 +1,4 @@
 /* ********************************* MOBILE - NAVIGATION *** */
-
 $('.nav-link').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
@@ -9,15 +8,14 @@ $('#topBtn').on('click', function () {
 });
 
 /* ***************************** SHRINKING NAV ON SCROLL *** */
-
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
             $('.navbar').addClass('shrink');
-            $('.navbar-brand img').css('width','220px');
+            $('.navbar-brand img').css('width', '220px');
         } else {
             $('.navbar').removeClass('shrink');
-            $('.navbar-brand img').css('width','');
+            $('.navbar-brand img').css('width', '');
         }
     });
 });
@@ -28,6 +26,7 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
 */
+
 /*
 /!* NAV NOT CHANGING ON RELOAD*!/
 $(window).scroll(ScrollChange);
@@ -46,9 +45,7 @@ $(document).ready(function () {
 */
 
 /* ******************************* NAV LINK HIGHLIGHTING *** */
-
 // Cache selectors
-
 let lastId,
     topMenu = $("#menu"),
     topMenuHeight = topMenu.outerHeight() + 15,
@@ -63,7 +60,6 @@ let lastId,
     });
 
 // Bind to scroll
-
 $(window).scroll(function () {
     // Get container scroll position
     let fromTop = $(this).scrollTop() + topMenuHeight;
@@ -87,10 +83,9 @@ $(window).scroll(function () {
 });
 
 /* ************************************ SMOOTH SCROLLING *** */
-
-$('a[href^="#"]').on('click', function(event) {
+$('a[href^="#"]').on('click', function (event) {
     let target = $(this.getAttribute('href'));
-    if( target.length ) {
+    if (target.length) {
         event.preventDefault();
         $('html, body').stop().animate({
             scrollTop: target.offset().top
@@ -98,13 +93,12 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 
-$("#logo").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+$("#logo").click(function () {
+    $("html, body").animate({scrollTop: 0}, "slow");
     return false;
 });
 
 /* **************************************** GO UP BUTTON *** */
-
 $(document).ready(function () {
 
     $(window).scroll(function () {

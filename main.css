@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     border-bottom: 1px solid #fff;
     transition: height .6s;
     padding: .2rem 0 1rem;
@@ -83,7 +84,6 @@ body {
 
 /* ******************************* NAV MIN 418 ****/
 /* ************************************************/
-
 @media only screen and (min-width: 410px) {
     .body .navbar {
         flex-direction: row;
@@ -140,7 +140,6 @@ body {
 
 /* ******************************* NAV MIN 850 ****/
 /* ************************************************/
-
 @media only screen and (min-width: 850px) {
     .body .nav-item {
         padding-right: 1rem;
@@ -203,7 +202,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 70px 20px 0;
+    padding: 150px 20px 0;
     text-align: center;
     color: whitesmoke;
 }
@@ -231,6 +230,12 @@ body {
 .hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
+}
+
+@media only screen and (min-width: 410px) {
+    .hero {
+        padding-top: 70px;
+    }
 }
 
 /* **************************************************** SECTION "Functions" ********** */
@@ -281,8 +286,14 @@ body {
 }
 
 .functions-text {
-    font-size: 2.5rem;
     text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 410px) {
+    .functions-text {
+        font-size: 2.5rem;
+    }
 }
 
 /* **************************************************** SECTION "Offer" ************* */
@@ -340,6 +351,10 @@ body {
     padding: 3rem 0;
 }
 
+.about-us .row {
+    margin: 0;
+}
+
 .about-us h1 {
     font-weight: bold;
     text-align: center;
@@ -375,7 +390,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 7rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -391,9 +406,11 @@ body {
     box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
 }
 
-.newsletter-paragraph-section {
-}
 
+
+label i {
+    color: #a5321d;
+}
 .newsletter input {
     text-align: center;
     max-width: 150px;
@@ -401,9 +418,9 @@ body {
 
 .newsletter button {
     height: 35px;
-    max-width: 110px;
+    max-width: 140px;
     color: #666F89;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 7px;
     font-weight: 700;
     margin: .5rem auto;
@@ -416,17 +433,42 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-    .row.newsletter-input-section {
-        flex-flow: row nowrap;
+    .newsletter {
+        padding: 2rem 3.5rem;
     }
-
-    .row.newsletter-input-section > * {
-        margin: .5rem .5rem;
+    div.inputs, div.buttons {
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.inputs {
+        padding: 1rem;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+    .newsletter {
+        padding: 1rem 2rem;
+    }
+    div.newsletter-input-section {
+        flex-direction: row;
+    }
+    .inputs {
+        box-shadow: none;
 
+    }
+    div.buttons {
+        width: 300px;
+        box-shadow: none;
+    }
+    .buttons button {
+        margin-left: 1.2rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+
+    }
 }
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
