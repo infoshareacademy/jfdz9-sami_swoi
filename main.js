@@ -115,3 +115,8 @@ $(document).ready(function () {
     });
 
 });
+
+// WINDOW OPENER
+
+const newWnd = window.open();
+newWnd.opener = null;
