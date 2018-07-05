@@ -241,8 +241,8 @@ body {
 .offer {
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.8),
-                rgba(0, 0, 0, 0.5)),
-                url("img/architecture-bay-bridge-356830.jpg");
+    rgba(0, 0, 0, 0.5)),
+    url("img/architecture-bay-bridge-356830.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
@@ -405,5 +405,9 @@ body {
 .topBtn-text {
     font-size: 30px;
     color: black;
+}
+
+.letterspc {
+    letter-spacing: 0.05rem;
 }
 
