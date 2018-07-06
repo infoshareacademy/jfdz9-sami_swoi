@@ -188,17 +188,20 @@
                     Zapraszam do poznania mojej osoby i początku przygody z kodowaniem.</p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.facebook.com/daniel.luty.50">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.facebook.com/daniel.luty.50">
                             <i class="fab fa-facebook fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.linkedin.com/in/daniel-luty-4a2087134">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.linkedin.com/in/daniel-luty-4a2087134">
                             <i class="fab fa-linkedin fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://github.com/DanielATPL">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://github.com/DanielATPL">
                             <i class="fab fa-github-square fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -222,12 +225,14 @@
                         </a>
                     </li>
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.linkedin.com/in/marcinsak">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.linkedin.com/in/marcinsak">
                             <i class="fab fa-linkedin fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://github.com/MarcinnSak">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://github.com/MarcinnSak">
                             <i class="fab fa-github-square fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -246,7 +251,8 @@
                     maszyn. </p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.facebook.com/dereczyn">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.facebook.com/dereczyn">
                             <i class="fab fa-facebook fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -275,12 +281,14 @@
                     większość wolnego czasu poświęcam na naukę programowania.</p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.facebook.com/rywolt">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.facebook.com/rywolt">
                             <i class="fab fa-facebook fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-3">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://www.linkedin.com/in/pawel-rywolt">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://www.linkedin.com/in/pawel-rywolt">
                             <i class="fab fa-linkedin fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -290,7 +298,8 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a target="_blank" rel="noopener noreferrer" class="icon_1" href="https://prywolt.github.io/about-me">
+                        <a target="_blank" rel="noopener noreferrer" class="icon_1"
+                           href="https://prywolt.github.io/about-me">
                             <i class="fas fa-user-circle fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -305,32 +314,30 @@
 
 <!--/************ Footer ***********/-->
 
-<footer class="footer container-fluid">
-    <div class="row">
-        <form id="newsletter" class="newsletter bg-warning container-fluid">
-            <div class="row newsletter-input-section">
-
-                <div class="inputs">
-                    <label for="name">Twoje imię<i>*</i></label>
-                    <input name="user-name" id="name" title="text" type="text" placeholder="Wpisz imię ..." pattern="[A-Za-z]{1,30}" required="">
-                    <label for="email">Twoj email<i>*</i></label>
-                    <input name="user-email" id="email" title="email" type="email" placeholder="... i maila !" required="">
-                </div>
-
-                <div class="buttons">
-                    <button type="submit">Wyślij</button>
-                </div>
-
-            </div>
-            <p class="row">* Wysyłamy oczywiście tylko jednego maila z informacją o
-                premierze strony. Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</p>
-        </form>
-    </div>
+<footer class="footer container-fluid bg-warning">
+    <h2>Bądź na bieżąco ...</h2>
+    <form id="newsletter" class="row newsletter">
+        <div class="inputs container-fluid">
+            <label>Twoje imię<i>*</i> :
+                <i class="fa fa-check" id="successName"></i>
+                <input id="name" type="text" name="user-name"
+                       placeholder="Wpisz imię . . ."
+                       pattern="[A-Za-z]{1,30}" required>
+                <label>Twój email<i>*</i> :
+                    <i class="fa fa-check" id="success"></i>
+                    <input id="mail" type="email" name="user-email"
+                           placeholder=". . . . . i maila !" required>
+                </label>
+        </div>
+        <button type="submit">Wyślij*</button>
+    </form>
+    <p class="row">* Wysyłamy oczywiście tylko jednego maila z informacją o
+        premierze strony. Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</p>
 </footer>
 
 <!--/************ Scripts **********/-->
 
-<script src="jquery-3.3.1.min.js"></script>
+<script src="./jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

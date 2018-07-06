@@ -120,3 +120,23 @@ $(document).ready(function () {
 
 const newWnd = window.open();
 newWnd.opener = null;
+
+/* ************************************* FORM VALIDATION *** */
+
+$(document).ready(function () {
+
+    $('input#mail').focusout(function () {
+        email_validate();
+    });
+    
+    function email_validate() {
+        let pattern = /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        let mail = $('mail').val();
+
+        if(mail !== '') {
+            if (pattern.test(mail)) {
+                $('#success').css('display', 'block');
+            }
+        }
+    }
+});
