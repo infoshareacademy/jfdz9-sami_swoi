@@ -114,6 +114,7 @@ $(document).ready(function () {
         return false;
     });
 
+<<<<<<< HEAD
 });
 
 // WINDOW OPENER
@@ -140,3 +141,6 @@ $(document).ready(function () {
         }
     }
 });
+=======
+});
+>>>>>>> b5ab21d0c692b973ba2356e585e6961f0dfabfd9
