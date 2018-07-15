@@ -12,6 +12,8 @@
           crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="form.css">
     <title>HARUJEMY.PL</title>
 </head>
 <body id="body" class="body">
@@ -42,7 +44,8 @@
 
 <header class="hero container-fluid">
     <h1 class="hero-h1">Szukanie pracy nigdy nie było prostsze</h1>
-    <p class="hero-p">Niezależnie, czy szukasz wymarzonej pracy, czy ludzi do swojego zespołu - nasza aplikacja Ci w tym pomoże.<br>
+    <p class="hero-p">Niezależnie, czy szukasz wymarzonej pracy, czy ludzi do swojego zespołu - nasza aplikacja Ci w tym
+        pomoże.<br>
         Dołącz
         do newslettera, aby dowiedzieć się więcej.</p>
     <a href="#newsletter" class="button scroll">Newsletter</a>
@@ -312,28 +315,31 @@
     </button>
 </main>
 
-<!--/************ Footer ***********/-->
+<!--/************* Form ************/-->
 
-<footer class="footer container-fluid bg-warning">
+<section class="form container-fluid bg-warning">
     <h2>Bądź na bieżąco ...</h2>
     <form id="newsletter" class="row newsletter">
         <div class="inputs container-fluid">
             <label>Twoje imię<i>*</i> :
-                <i class="fa fa-check" id="successName"></i>
                 <input id="name" type="text" name="user-name"
                        placeholder="Wpisz imię . . ."
                        pattern="[A-Za-z]{1,30}" required>
-                <label>Twój email<i>*</i> :
-                    <i class="fa fa-check" id="success"></i>
-                    <input id="mail" type="email" name="user-email"
-                           placeholder=". . . . . i maila !" required>
-                </label>
+            </label>
+            <label>Twój email<i>*</i> :
+                <input id="mail" type="email" name="user-email"
+                       placeholder=". . . . . i maila !" required>
+            </label>
         </div>
         <button type="submit">Wyślij*</button>
     </form>
     <p class="row">* Wysyłamy oczywiście tylko jednego maila z informacją o
         premierze strony. Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</p>
-</footer>
+</section>
+
+<!--/************ Footer ***********/-->
+
+<footer></footer>
 
 <!--/************ Scripts **********/-->
 

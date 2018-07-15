@@ -114,7 +114,6 @@ $(document).ready(function () {
         return false;
     });
 
-<<<<<<< HEAD
 });
 
 // WINDOW OPENER
@@ -124,23 +123,3 @@ newWnd.opener = null;
 
 /* ************************************* FORM VALIDATION *** */
 
-$(document).ready(function () {
-
-    $('input#mail').focusout(function () {
-        email_validate();
-    });
-    
-    function email_validate() {
-        let pattern = /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        let mail = $('mail').val();
-
-        if(mail !== '') {
-            if (pattern.test(mail)) {
-                $('#success').css('display', 'block');
-            }
-        }
-    }
-});
-=======
-});
->>>>>>> b5ab21d0c692b973ba2356e585e6961f0dfabfd9
