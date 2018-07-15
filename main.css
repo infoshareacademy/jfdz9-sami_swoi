@@ -407,3 +407,31 @@ body {
     color: black;
 }
 
+/* **************************************************** COOKIES *********** */
+/***************************************************************************************/
+
+.cookies {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    background: #000000;
+    color: #dbdbdb;
+    border-top: 1px solid #ffffff;
+    z-index: 10000;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.cookies-text {
+    font-size: 110%;
+}
+
+.cookies-akcept {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 7px 0 7px 27px;
+    font-size: 90%;
+}
