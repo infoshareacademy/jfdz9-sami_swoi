@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>HARUJEMY.PL</title>
 </head>
 <body id="body" class="body">
@@ -46,9 +45,8 @@
     <h1 class="hero-h1">Szukanie pracy nigdy nie było prostsze</h1>
     <p class="hero-p">Niezależnie, czy szukasz wymarzonej pracy, czy ludzi do swojego zespołu - nasza aplikacja Ci w tym
         pomoże.<br>
-        Dołącz
-        do newslettera, aby dowiedzieć się więcej.</p>
-    <a href="#newsletter" class="button scroll">Newsletter</a>
+        Dołącz do newslettera, aby dowiedzieć się o opublikowaniu naszego serwisu.</p>
+    <a href="#form" class="button scroll">Newsletter</a>
 </header>
 
 <!--/************* Main ************/-->
@@ -318,43 +316,50 @@
 <!--/************* Form ************/-->
 
 <section class="form container-fluid bg-warning">
-    <h2>Bądź na bieżąco ...</h2>
-    <form id="newsletter" class="row newsletter">
+    <h2 id="formtopic">Bądź na bieżąco ...</h2>
+    <form id="form" class="row newsletter" action="https://script.google.com/macros/s/AKfycbxVz2WSb_fJpsTawycne-Khn1HA0LQNUQTNT39JwA/exec" method="post">
         <div class="inputs container-fluid">
-            <label>Twoje imię<i>*</i> :
-                <input id="name" type="text" name="user-name"
+            <label>Twoje imię<i class="star">*</i> :
+                <input id="name" type="text" name="name"
                        placeholder="Wpisz imię . . ."
                        pattern="[A-Za-z]{1,30}" required>
             </label>
-            <label>Twój email<i>*</i> :
-                <input id="mail" type="email" name="user-email"
+            <label>Twój email<i class="star">*</i> :
+                <input id="mail" type="email" name="email"
                        placeholder=". . . . . i maila !" required>
+                <i class="fa fa-check"></i>
+                <i class="fa fa-times"></i>
             </label>
         </div>
         <button type="submit">Wyślij*</button>
     </form>
+    <div class="thankyou_message" id="thankyou_message">
+        <h2>Dziękujemy za zainteresowanie ! O starcie dowiesz sie niebawem !</h2>
+    </div>
     <p class="row">* Wysyłamy oczywiście tylko jednego maila z informacją o
         premierze strony. Bez zbędnego spamowania. Ponadto Twoje dane są w dobrych rękach. Zapraszamy.</p>
 </section>
 
 <!--/************ Footer ***********/-->
 
-<footer></footer>
+<footer class="footer">
+
+</footer>
 
 <!--/************ Scripts **********/-->
 
-<script src="./jquery-3.3.1.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.2.0/dist/smooth-scroll.min.js">
-</script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
         integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
         crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script src="js/formscript.js"></script>
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

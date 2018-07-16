@@ -60,12 +60,13 @@
 .nav-link {
     letter-spacing: 5px;
     font-weight: bold;
+    color: #007bff;
     cursor: pointer;
     transition: all .3s;
 }
 
 .nav-link:hover {
-    color: #4286f4;
+    color: #005ab4;
 }
 
 .active {
@@ -113,38 +114,19 @@
     .nav-item:first-of-type {
         margin-top: 0;
     }
-
-    .active {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-shadow: none;
-    }
-
-    .active::before {
-        position: relative;
-        content: "Ξ";
-        opacity: .65;
-        font-size: .9rem;
-        transition: all 4s;
-    }
 }
 
 /* ******************************* NAV MIN 850 ****/
 /* ************************************************/
 @media only screen and (min-width: 850px) {
-    .body .nav-item {
+    .nav-item {
         padding-right: 1rem;
     }
 
-    .body .nav-item .nav-link {
+    .nav-item .nav-link {
         padding-bottom: .2rem;
     }
 
-    .active::before {
-        bottom: -2px;
-    }
 }
 
 /* ******************************* NAV MIN 992 ****/

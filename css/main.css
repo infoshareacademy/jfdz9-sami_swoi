@@ -5,33 +5,27 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-@media only screen and (min-width: 992px) {
-
-}
-
-
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("img/hero3.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 20px 0;
+    padding: 2rem 1rem;
     text-align: center;
     color: whitesmoke;
 }
 
 .hero .hero-h1 {
-    font-size: 50px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.05rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .hero .hero-p {
@@ -54,7 +48,14 @@ body {
 
 @media only screen and (min-width: 410px) {
     .hero {
-        padding-top: 70px;
+        padding-top: 5rem;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero .hero-h1 {
+        font-size: 3.5rem;
     }
 }
 
@@ -165,7 +166,7 @@ body {
 /***************************************************************************************/
 .about-us {
     background: #f8f9fa;
-    height: calc(100% - 20px);
+    height: 100%;
     padding: 3rem 0;
 }
 
@@ -196,9 +197,14 @@ body {
 /* ****************************************************       FOOTER       *********** */
 /***************************************************************************************/
 
+.footer {
+    height: 10rem;
+    width: 100%;
+}
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
+
 #topBtn {
     display: none;
     position: fixed;
