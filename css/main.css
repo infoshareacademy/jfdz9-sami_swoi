@@ -5,165 +5,27 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-@media only screen and (min-width: 992px) {
-
-}
-
-/* **************************************************** NAVIGATION ******************* */
-/***************************************************************************************/
-
-.body .navbar {
-    padding-bottom: .5rem;
-    border-bottom: 2px solid #fff;
-    transition: height .6s;
-}
-
-.navbar .navbar-brand {
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem;
-    padding: 0;
-}
-
-.navbar .navbar-brand img {
-    width: 250px;
-    transition: width .6s;
-}
-
-.body .navbar .navbar-toggler {
-    position: relative;
-    top: -1px;
-    font-size: 1.1rem;
-    padding: 5px 7px 4px;
-    color: #071416;
-    background-color: rgba(255, 255, 255, .8);
-}
-
-.menu-toggler::after {
-    content: "\25be";
-    position: relative;
-    top: -1px;
-}
-
-.navbar-nav {
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.nav-item {
-    padding: .5rem 0;
-    border-top: 1px solid rgba(255, 255, 255, .5);
-}
-
-.nav-item:first-of-type {
-    margin-top: .7rem;
-}
-
-.nav-item:last-of-type {
-    padding-bottom: 0;
-}
-
-.nav-link {
-    letter-spacing: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.active {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-    transition: text-shadow .5s;
-}
-
-/* ******************************* NAV MIN 768 ****/
-/* ************************************************/
-@media only screen and (min-width: 768px) {
-    .body .navbar {
-        padding-bottom: 0;
-        padding-right: .4rem;
-        transition: height .7s;
-    }
-
-    .navbar .navbar-brand img {
-        padding-bottom: 10px;
-    }
-
-    .nav-item {
-        border: none;
-        margin-left: .6rem;
-    }
-
-    .navbar-nav {
-        text-align: center;
-        font-size: .9rem;
-    }
-
-    .nav-item:first-of-type {
-        margin-top: 0;
-    }
-}
-
-/* ******************************* NAV MIN 992 ****/
-/* ************************************************/
-@media only screen and (min-width: 992px) {
-    .body .navbar {
-        height: 5rem;
-    }
-
-    .navbar .navbar-brand {
-        font-size: 2.3rem;
-    }
-
-    .navbar .navbar-brand img {
-        width: 350px;
-        padding-bottom: 10px;
-    }
-
-    .navbar-nav {
-        padding-right: 1rem;
-    }
-
-    .nav-item {
-        margin-left: 2rem;
-    }
-
-    .nav-link {
-        font-size: 1rem;
-    }
-
-    /* **************************** SHRINK NAV ****/
-    /* ********************************************/
-    .shrink {
-        height: 55px !important;
-        transition: height .7s;
-    }
-
-    /* ***************** NAV LINK HIGHLIGHTING ****/
-    /* ********************************************/
-
-}
-
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("img/hero3.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 70px 20px 0;
+    padding: 2rem 1rem;
     text-align: center;
     color: whitesmoke;
 }
 
 .hero .hero-h1 {
-    font-size: 50px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.05rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .hero .hero-p {
@@ -182,6 +44,19 @@ body {
 .hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
+}
+
+@media only screen and (min-width: 410px) {
+    .hero {
+        padding-top: 5rem;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero .hero-h1 {
+        font-size: 3.5rem;
+    }
 }
 
 /* **************************************************** SECTION "Functions" ********** */
@@ -231,8 +106,14 @@ body {
 }
 
 .functions-text {
-    font-size: 2.5rem;
     text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 410px) {
+    .functions-text {
+        font-size: 2.5rem;
+    }
 }
 
 /* **************************************************** SECTION "Offer" ************* */
@@ -240,9 +121,7 @@ body {
 
 .offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8),
-                rgba(0, 0, 0, 0.5)),
-                url("img/offer1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/offer1.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
@@ -287,8 +166,12 @@ body {
 /***************************************************************************************/
 .about-us {
     background: #f8f9fa;
-    height: calc(100% - 20px);
+    height: 100%;
     padding: 3rem 0;
+}
+
+.about-us .row {
+    margin: 0;
 }
 
 .about-us h1 {
@@ -310,78 +193,18 @@ body {
     padding-top: 20px;
 }
 
-/* ***************************************************      FOOTER      ************** */
+
+/* ****************************************************       FOOTER       *********** */
 /***************************************************************************************/
+
 .footer {
-    padding: 1rem 1rem 0;
-}
-
-.footer div {
-    display: flex;
-    flex-direction: column;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 7rem;
-    text-align: center;
-}
-
-.newsletter-input-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.newsletter-input-section > * {
-    margin: .5rem 0;
-    -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
-    -moz-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
-}
-
-.newsletter-paragraph-section {
-}
-
-.newsletter input {
-    text-align: center;
-    max-width: 150px;
-}
-
-.newsletter button {
-    height: 35px;
-    max-width: 110px;
-    color: #666F89;
-    font-size: 1.5rem;
-    letter-spacing: 7px;
-    font-weight: 700;
-    margin: .5rem auto;
-}
-
-.newsletter p {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    color: #fff;
-}
-
-@media screen and (min-width: 576px) {
-    .row.newsletter-input-section {
-        flex-flow: row nowrap;
-    }
-
-    .row.newsletter-input-section > * {
-        margin: .5rem .5rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
+    height: 10rem;
+    width: 100%;
 }
 
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
+
 #topBtn {
     display: none;
     position: fixed;

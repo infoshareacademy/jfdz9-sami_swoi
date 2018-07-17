@@ -1,0 +1,179 @@
+/* ***************************************************    FORM BODY     ************** */
+/***************************************************************************************/
+
+.form {
+    padding: 2rem 1rem 0;
+}
+
+.form h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 1rem 2rem 2rem;
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .form h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .form p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+/* *****************************************************      FORM      ************** */
+/***************************************************************************************/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter button {
+    height: 55px;
+    width: 180px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: bold;
+    margin: .5rem auto;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.newsletter button:hover {
+    background-color: #005ab4;
+
+}
+
+.inputs {
+    font-size: 1.2rem;
+}
+
+.inputs label {
+    position: relative;
+    width: 300px;
+    height: 100px;
+}
+
+.inputs label input {
+    border: none;
+    border-radius: .2rem;
+    height: 40px;
+    text-indent: 1rem;
+    margin: .7rem;
+}
+
+.inputs label input:hover {
+    outline: 2px solid #4286f4;
+}
+
+.inputs label input:focus {
+    box-shadow: inset 0 0 5px 1px #005ab4;
+}
+
+.fa-check, .fa-times {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1.9rem;
+
+}
+
+.fa-check {
+    color: green;
+    display: none;
+}
+
+.fa-times {
+    color: red;
+    display: none;
+}
+
+.inputs .star {
+    color: #a5321d;
+}
+
+@media screen and (min-width: 750px) {
+
+    .newsletter {
+        padding: 1rem;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .inputs input {
+        margin: 1rem 2rem;
+    }
+
+    .inputs label i {
+        padding-right: .3rem;
+    }
+
+    .newsletter button {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .newsletter {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .newsletter button {
+        position: relative;
+        top: 5px;
+        height: 3rem;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .inputs {
+        margin: 0;
+        width: 45rem;
+        padding-left: 0;
+    }
+
+    .form .inputs label {
+        margin: 0 1rem;
+        width: 400px;
+    }
+
+    .inputs label input {
+        height: 2.4rem;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .fa-check, .fa-times {
+        right: .1rem;
+    }
+}
+
+
+.thankyou_message {
+    display: none;
+}
