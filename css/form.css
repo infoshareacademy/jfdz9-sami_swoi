@@ -160,13 +160,17 @@
 
     .form .inputs label {
         margin: 0 1rem;
+        width: 400px;
     }
 
     .inputs label input {
         height: 2.4rem;
         margin-bottom: 0;
+        width: 100%;
     }
-
+    .fa-check, .fa-times {
+        right: .1rem;
+    }
 }
 
 
