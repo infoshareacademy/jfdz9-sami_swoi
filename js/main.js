@@ -152,4 +152,26 @@ $(document).ready(function () {
 
 });
 
+/* ************************************* ABOUT US *** */
+
+
+const $AboutTeamPhotos = $('.about-photo');
+const $aboutTeamOffset = $AboutTeamPhotos.offset().top;
+const $startSection = $('#banner');
+
+
+function animateTeamPhotos() {
+    let windowBottomEdge = $(window).scrollTop() + $(window).height();
+
+    if (windowBottomEdge > $aboutTeamOffset) {
+        $AboutTeamPhotos.addClass('zoomIn');
+    }
+}
+
+$(window).on('scroll', animateTeamPhotos);
+
+$(document).ready(function () {
+    $startSection.addClass('fadeInRight');
+});
+
 
