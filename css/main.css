@@ -90,9 +90,9 @@ body {
     flex-direction: row-reverse;
 }
 
-.functions-content-subcontainers:hover .functions-imgs {
-    transform: scale(1.1);
-}
+/*.functions-content-subcontainers:hover .functions-imgs {*/
+    /*transform: scale(1.1);*/
+/*}*/
 
 .functions-imgs {
     width: 100%;
