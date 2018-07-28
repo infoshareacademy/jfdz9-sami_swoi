@@ -71,3 +71,12 @@ $('.send-cv-img').mouseenter(function () {
             .fadeIn(200);
     }
 });
+
+var iconsArray = ['icons/aplikuj.png', 'icons/czas.png', 'icons/czytelne.png', 'icons/zaawansowane.png'];
+
+function randomIcon(iconsArray) {
+    return iconsArray[Math.floor(Math.random()*iconsArray.length)]
+}
+console.log(randomIcon(iconsArray));
+
+
