@@ -28,7 +28,7 @@ $('.searching-img').mouseenter(function () {
             .fadeIn(200);
     } else {
         $(this)
-            .fadeOut(400, function () {
+            .fadeOut(200, function () {
                 $(this).attr('src', 'img/searching2.jpg');
                 $(this).addClass('1');
             })
@@ -64,7 +64,7 @@ $('.send-cv-img').mouseenter(function () {
             .fadeIn(200);
     } else {
         $(this)
-            .fadeOut(400, function () {
+            .fadeOut(200, function () {
                 $(this).attr('src', 'img/send-cv2.jpg');
                 $(this).addClass('1');
             })
@@ -74,9 +74,11 @@ $('.send-cv-img').mouseenter(function () {
 
 var iconsArray = ['icons/aplikuj.png', 'icons/czas.png', 'icons/czytelne.png', 'icons/zaawansowane.png'];
 
-function randomIcon(iconsArray) {
-    return iconsArray[Math.floor(Math.random()*iconsArray.length)]
+// function randomIcon(iconsArray) {
+//     return iconsArray[Math.floor(Math.random() * iconsArray.length)]
+// }
+for (i = 0; i < 20; i++) {
+    console.log(iconsArray[Math.floor(Math.random() * iconsArray.length)]);
 }
-console.log(randomIcon(iconsArray));
 
 
