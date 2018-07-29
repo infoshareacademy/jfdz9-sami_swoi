@@ -81,4 +81,10 @@ for (i = 0; i < 20; i++) {
     console.log(iconsArray[Math.floor(Math.random() * iconsArray.length)]);
 }
 
+var size = ((Math.random()*100) + 50).toFixed();
+$newDiv = $('<div/>').css({
+    'with': size + 'px',
+    'height': size + 'px',
+    'background': //tu będzie ikona + cover//
+});
 
