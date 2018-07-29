@@ -88,7 +88,6 @@ for (i = 0; i < 20; i++) {
         'z-index': '0',
         'position': 'absolute'
     });
-    // console.log(newDiv);
     $('#functions').append(newDiv);
 }
 
