@@ -64,14 +64,18 @@ body {
 
 .functions {
     padding-top: 3rem;
-    background-image: url("../img/My Post.png");
+    background-image: url("../img/My Post - yellow.jpg");
     background-size: 70%;
+    background-attachment: fixed;
 }
 
 .functions h1 {
     font-weight: bold;
     padding: 4rem 0;
     text-align: center;
+    background: rgba(105, 105, 105, 0.8);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .functions-content {
@@ -106,6 +110,8 @@ body {
 .functions-text {
     text-align: center;
     font-size: 2rem;
+    font-weight: bold;
+    background: rgba(105, 105, 105, 0.8);
 }
 
 @media only screen and (min-width: 410px) {
