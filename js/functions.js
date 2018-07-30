@@ -71,6 +71,8 @@ $('.send-cv-img').mouseenter(function () {
             .fadeIn(200);
     }
 });
+ /*
+
 
 var iconsArray = ['icons/aplikuj.png', 'icons/czas.png', 'icons/czytelne.png', 'icons/zaawansowane.png'];
 
@@ -80,16 +82,25 @@ var iconsArray = ['icons/aplikuj.png', 'icons/czas.png', 'icons/czytelne.png', '
 for (i = 0; i < 20; i++) {
     // console.log(iconsArray[Math.floor(Math.random() * iconsArray.length)]); //losowanie 20 ikon
     var size = ((Math.random()*100) + 50).toFixed(); //losowy rozmiar
+    var containerWidth = $('#functions').width();
+    var containerHeight = $('#functions').height();
+    var X = Math.floor(Math.random() * containerWidth);
+    var Y = Math.floor(Math.random() * containerHeight);
     var newDiv = $('<div>').css({
         'width': size + 'px',
         'height': size + 'px',
+        'top': X + 'px',
+        'left': Y + 'px',
         'background-image': 'url(iconsArray[Math.floor(Math.random() * iconsArray.length)])',//tu będzie ikona,
         'background-size': '100%',
         'z-index': '0',
-        'position': 'absolute'
+        'position': 'absolute',
+        'color': 'black',
     });
     $('#functions').append(newDiv);
-}
+};
 
 
 
+
+*/

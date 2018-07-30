@@ -64,6 +64,8 @@ body {
 
 .functions {
     padding-top: 3rem;
+    background-image: url("../img/My Post.png");
+    background-size: 70%;
 }
 
 .functions h1 {
