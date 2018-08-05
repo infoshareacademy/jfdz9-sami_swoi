@@ -85,6 +85,22 @@ body {
     max-width: 900px;
 }
 
+.functions-content-search {
+
+}
+
+.functions-content-terms {
+
+}
+
+.functions-content-time{
+
+}
+
+.functions-content-apply {
+
+}
+
 .functions-content-subcontainers {
     display: flex;
     flex-direction: row;
