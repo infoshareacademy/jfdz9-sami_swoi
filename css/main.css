@@ -86,25 +86,25 @@ body {
 }
 
 .functions-content-search {
-    background-image: url("../img/searching.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/searching.jpeg");
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .functions-content-terms {
-    background-image: url("../img/clear-requirements.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/clear-requirements.jpeg");
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .functions-content-time{
-    background-image: url("../img/time-waste.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/time-waste.jpeg");
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .functions-content-apply {
-    background-image: url("../img/send-cv.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/send-cv.jpeg");
     -webkit-background-size: cover;
     background-size: cover;
 }
