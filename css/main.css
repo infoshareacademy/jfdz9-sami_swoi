@@ -7,10 +7,18 @@ body {
 
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
-.hero {
+#carouselExampleControls .carousel-item {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");
     background-size: cover;
     background-position: center;
+    height: 100vh;
+}
+
+
+.hero {
+    /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
