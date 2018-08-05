@@ -86,20 +86,29 @@ body {
 }
 
 .functions-content-search {
-
+    background-image: url("../img/searching.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .functions-content-terms {
-
+    background-image: url("../img/clear-requirements.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .functions-content-time{
-
+    background-image: url("../img/time-waste.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .functions-content-apply {
-
+    background-image: url("../img/send-cv.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
 }
+
 
 .functions-content-subcontainers {
     display: flex;
@@ -124,8 +133,7 @@ body {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    background: rgba(105, 105, 105, 0.8);
-    border-radius: 15px;
+    color: white;
 }
 
 @media only screen and (min-width: 410px) {
