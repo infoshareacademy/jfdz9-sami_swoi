@@ -121,7 +121,7 @@ body {
 
 .offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/offer1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/background-background-image-blue-sky-1054218.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
@@ -139,11 +139,12 @@ body {
 
 .offer-details h4 {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 .offer-details p {
     color: lightgrey;
-    font-size: 1.1em;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
