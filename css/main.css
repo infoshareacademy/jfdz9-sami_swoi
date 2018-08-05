@@ -84,7 +84,15 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.functions-content-box {
+    margin: 2%;
+    width: 45%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -117,9 +125,14 @@ body {
     text-align: center;
     font-weight: bold;
     color: white;
+    font-size: 1rem;
+    align-self: center;
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 410px) and (max-width: 1024px) {
+    .functions-content {
+        flex-direction: column;
+    }
     .functions-text {
         font-size: 2rem;
     }
