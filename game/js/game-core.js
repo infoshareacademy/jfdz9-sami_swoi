@@ -33,8 +33,6 @@ var gameArea = {
 
 function updateGameArea() {
     gameArea.clear();
-    gameCloud1.x -= 1;
-    gameCloud2.x -= 2;
-    gameCloud1.update();
-    gameCloud2.update();
+    myGamePiece.x -= 1;
+    myGamePiece.update();
 }
