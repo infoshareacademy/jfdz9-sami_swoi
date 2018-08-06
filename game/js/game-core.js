@@ -1,10 +1,8 @@
-var gameCloud1;
-var gameCloud2;
+var myGamePiece;
 
 function startGame() {
     gameArea.start();
-    gameCloud1 = new component(30, 30, "black", 480, 10);
-    gameCloud2 = new component(15, 15, "red", 480, 50);
+    myGamePiece = new component(30, 30, "black", 10, 120);
 }
 
 function component(width, height, color, x, y) {
