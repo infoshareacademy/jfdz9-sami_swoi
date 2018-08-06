@@ -121,7 +121,7 @@ body {
 
 .offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/offer1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/background-background-image-blue-sky-1054218.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
@@ -139,11 +139,12 @@ body {
 
 .offer-details h4 {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 .offer-details p {
     color: lightgrey;
-    font-size: 1.1em;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -242,14 +243,14 @@ body {
 }
 
 .box .title {
-    font-size: 20px;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
 }
 
 .box .description {
-    font-size: .8rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: black;
 }
 
@@ -274,8 +275,8 @@ body {
 }
 
 .box .social-links li a {
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
+    color: #000080;
 
 }
 
@@ -299,7 +300,9 @@ body {
 }
 
 .rounded-circle {
-box-shadow: 0 5px 10px 0 #adb5bd;
+    border-style: solid;
+    border-width: 8px;
+    border-color: darkgrey;
 }
 
 /*.icon_1 {*/
