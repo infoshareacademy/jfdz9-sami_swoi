@@ -64,6 +64,9 @@ body {
 
 .functions {
     padding-top: 3rem;
+    background: url("../img/functions-background-yellow.jpg");
+    background-size: 70%;
+    background-attachment: fixed;
 }
 
 .functions h1 {
