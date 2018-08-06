@@ -73,6 +73,7 @@ body {
     font-weight: bold;
     padding: 4rem 0;
     text-align: center;
+    color: white;
 }
 
 .functions-content {
@@ -111,6 +112,8 @@ body {
 .functions-text {
     text-align: center;
     font-size: 2rem;
+    color: white;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 410px) {
