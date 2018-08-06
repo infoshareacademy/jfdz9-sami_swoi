@@ -1,8 +1,10 @@
-var myGamePiece;
+var gameCloud1;
+var gameCloud2;
 
 function startGame() {
     gameArea.start();
-    myGamePiece = new component(30, 30, "black", 480, 10);
+    gameCloud1 = new component(30, 30, "black", 480, 10);
+    gameCloud2 = new component(15, 15, "red", 480, 50);
 }
 
 function component(width, height, color, x, y) {
@@ -33,6 +35,8 @@ var gameArea = {
 
 function updateGameArea() {
     gameArea.clear();
-    myGamePiece.x -= 1;
-    myGamePiece.update();
+    gameCloud1.x -= 1;
+    gameCloud2.x -= 2;
+    gameCloud1.update();
+    gameCloud2.update();
 }
