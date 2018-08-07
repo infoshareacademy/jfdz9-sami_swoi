@@ -7,6 +7,7 @@ function startGame() {
     gameArea.start();
     myGamePiece = new component(30, 30, "black", 10, 350);
     myGameCloud = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
+    myBackground = new component(600, 400, "img/country-back.png", 0, 0, 'img');
 }
 
 /** Funkcja która tworzy komponenty, np. postać **/
@@ -33,6 +34,10 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
         }
+    };
+    this.newPos = function() {
+        this.x += this.speedX;
+        this.y += this.speedY;
     }
 }
 
@@ -54,6 +59,8 @@ var gameArea = {
 /** Odświeżanie gry **/
 function updateGameArea() {
     gameArea.clear();
+    myBackground.newPos();
+    myBackground.update();
     myGameCloud.x -= 1; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGamePiece.update();
     myGameCloud.update();
