@@ -1,27 +1,43 @@
 var myGamePiece;
 
+/** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
     gameArea.start();
-    myGamePiece = new component(30, 30, "black", 480, 10);
+    myGamePiece = new component(30, 30, "black", 10, 350);
+    myGameCloud = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
 }
 
-function component(width, height, color, x, y) {
+/** Funkcja która tworzy komponenty, np. postać **/
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    if (type === 'img') {
+        this.image = new Image();
+        this.image.src = color;
+    }
     this.width = width;
     this.height = height;
     this.x = x;
     this.y = y;
     this.update = function() {
         ctx = gameArea.context;
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        if (type === "img") {
+            ctx.drawImage(this.image,
+                this.x,
+                this.y,
+                this.width, this.height);
+        } else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
     }
 }
 
+/** Tworzenie pola gry, już ruchomego i odświeżającego się **/
 var gameArea = {
     canvas: document.createElement("canvas"),
     start: function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 600;
+        this.canvas.height = 400;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.interval = setInterval(updateGameArea, 20);
@@ -31,8 +47,10 @@ var gameArea = {
     }
 };
 
+/** Odświeżanie gry **/
 function updateGameArea() {
     gameArea.clear();
-    myGamePiece.x -= 1;
+    myGameCloud.x -= 1; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGamePiece.update();
+    myGameCloud.update();
 }
