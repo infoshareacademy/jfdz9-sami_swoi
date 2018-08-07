@@ -1,4 +1,6 @@
 var myGamePiece;
+var myGameCloud;
+var myBackground;
 
 /** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
@@ -16,6 +18,8 @@ function component(width, height, color, x, y, type) {
     }
     this.width = width;
     this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;
     this.x = x;
     this.y = y;
     this.update = function() {
