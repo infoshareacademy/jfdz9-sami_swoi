@@ -1,13 +1,15 @@
 var myGamePiece;
 var myGameCloud;
-var myBackground;
+var myBackgroundBack;
+var myBackgroundForest;
 
 /** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
     gameArea.start();
     myGamePiece = new component(30, 30, "black", 10, 350);
     myGameCloud = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
-    myBackground = new component(600, 400, "img/country-back.png", 0, 0, 'background');
+    myBackgroundBack = new component(600, 400, "img/country-back.png", 0, 0, 'background');
+    myBackgroundForest = new component(600, 200, "img/country-forest.png", 0, 100, 'background');
 }
 
 /** Funkcja która tworzy komponenty **/
@@ -66,9 +68,12 @@ var gameArea = {
 /** Odświeżanie gry **/
 function updateGameArea() {
     gameArea.clear();
-    myBackground.speedX = -1;
-    myBackground.newPos();
-    myBackground.update();
+    myBackgroundBack.speedX = -0.5;
+    myBackgroundForest.speedX = -0.7;
+    myBackgroundBack.newPos();
+    myBackgroundForest.newPos();
+    myBackgroundBack.update();
+    myBackgroundForest.update();
     myGameCloud.x -= 1; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGamePiece.update();
     myGameCloud.update();
