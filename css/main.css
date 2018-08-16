@@ -226,6 +226,7 @@ body {
 
 .box:hover .box-img {
     transform: rotateY(-90deg);
+    opacity: 0;
 }
 
 .box .box-img img {
