@@ -1,10 +1,8 @@
-/* **************************************************** MAIN ************************* */
+* **************************************************** MAIN ************************* */
 /***************************************************************************************/
-
 body {
     font-family: Montserrat, sans-serif;
 }
-
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
 #carouselExampleControls .carousel-item {
@@ -25,7 +23,6 @@ body {
     text-align: center;
     color: whitesmoke;
 }
-
 .hero .hero-h1 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -33,11 +30,9 @@ body {
     letter-spacing: 0.05rem;
     padding-top: 8rem;
 }
-
 .hero .hero-p {
     font-size: 1.3rem;
 }
-
 .hero .button {
     font-size: 22px;
     text-decoration: none;
@@ -46,47 +41,35 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
 }
-
 .hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
 }
-
 @media only screen and (min-width: 410px) {
     .hero {
         padding-top: 5rem;
         height: 100vh;
     }
 }
-
 @media only screen and (min-width: 768px) {
     .hero .hero-h1 {
         font-size: 3.5rem;
     }
 }
-
 /* **************************************************** SECTION "Functions" ********** */
 /***************************************************************************************/
-
 .functions {
     padding-top: 3rem;
-    background: url("../img/functions-background-yellow.jpg");
-    background-size: 70%;
-    background-attachment: fixed;
 }
-
 .functions h1 {
     font-weight: bold;
     padding: 4rem 0;
     text-align: center;
-    color: white;
 }
-
 .functions-content {
     width: 100%;
     max-width: 900px;
 }
-
 .functions-content-subcontainers {
     display: flex;
     flex-direction: row;
@@ -94,74 +77,57 @@ body {
     align-items: center;
     margin: 10% auto;
 }
-
 .functions-content-subcontainers:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
 }
-
 .functions-content-subcontainers:hover .functions-imgs {
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    transform: scale(1.1);
 }
-
 .functions-imgs {
     width: 100%;
     height: 100%;
-    box-shadow: 0 5px 7px rgba(0,0,0,0.15);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 15px;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    -moz-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
-
 .functions-text {
     text-align: center;
     font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
-
 @media only screen and (min-width: 410px) {
     .functions-text {
         font-size: 2.5rem;
     }
 }
-
 /* **************************************************** SECTION "Offer" ************* */
 /***************************************************************************************/
-
 .offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/background-background-image-blue-sky-1054218.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/offer1.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
 }
-
 .offer h1 {
     font-weight: bold;
     padding: 4rem 0;
     text-align: center;
 }
-
 .offer-details {
     text-align: center;
 }
-
 .offer-details h4 {
     font-size: 1.6em;
-    font-weight: bold;
 }
-
 .offer-details p {
     color: lightgrey;
-    font-size: 1rem;
+    font-size: 1.1em;
     margin-bottom: 2rem;
 }
-
 .offer-icon {
     font-size: 4em;
     cursor: pointer;
@@ -169,14 +135,12 @@ body {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
 }
-
 .offer-details:hover .func-icon {
     color: #7b9df3;
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
     transform: scale(1.3);
 }
-
 /* **************************************************** SECTION "About Us" *********** */
 /***************************************************************************************/
 .about-us {
@@ -184,150 +148,121 @@ body {
     height: 100%;
     padding: 2rem 2rem 7rem 2rem;
 }
-
 .about-us .row {
     margin: 0;
 }
-
 .about-us h1 {
     font-weight: bold;
     text-align: center;
     padding: 3rem 0 4rem 0;
 }
-
 .name {
     padding-top: 20px;
     font-weight: bold;
 }
-
 @keyframes zoomIn {
     from {
         opacity: 0;
         transform: scale3d(.3, .3, .3);
     }
-
     50% {
         opacity: 1;
     }
 }
-
 .zoomIn {
     animation-name: zoomIn;
-    animation-duration: 1.7s;
+    animation-duration: 1.5s;
 }
-
 .animated {
     animation-fill-mode: both;
 }
-
 .box {
     position: relative;
     perspective: 1000px;
 }
-
 .box .box-img {
     transform: rotateY(0);
     transition: all 0.50s ease-in-out 0s;
 }
-
 .box:hover .box-img {
     transform: rotateY(-90deg);
 }
-
 .box .box-img img {
     width: 100%;
     height: auto;
 }
-
 .box .box-content {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2rem 1.2rem;
+    padding: .8rem .5rem;
     text-align: center;
-    /*background: rgba(0, 0.5, 0, 0.3);*/
+    background: rgba(0, 0.5, 0, 0.3);
     transform: rotateY(90deg);
     transition: all 0.50s ease-in-out 0s;
 }
-
 .box:hover .box-content {
     transform: rotateY(0);
 }
-
 .box .title {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: black;
     font-weight: bold;
 }
-
 .box .description {
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: .8rem;
+    line-height: 1rem;
     color: black;
 }
-
 .box .title:after,
 .box .description:after {
     content: "";
-    width: 100%;
+    width: 80%;
     display: block;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #fff;
     margin: 10px auto;
 }
-
 .box .social-links {
-    margin-top: 1rem;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .box .social-links li {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 10px;
 }
-
 .box .social-links li a {
-    font-size: 24px;
-    color: #007bff;
-
+    font-size: 20px;
+    color: white;
 }
-
 .box .social-links li a:hover {
     text-decoration: none;
-    color: #ffc107;
+    color: #007bff;
     transform: rotateY(360deg);
     transition: all 0.5s ease-in-out 0s;
 }
-
 @media only screen and (max-width: 990px) {
     .box {
         margin-bottom: 20px;
     }
 }
-
 @media only screen and (max-width: 479px) {
     .box .box-content {
         padding: 20px;
     }
 }
-
-.img-fluid {
-    border-style: solid;
-    border-width: 5px;
-    border-color: dimgrey;
+.rounded-circle {
+    box-shadow: 0 5px 10px 0 #adb5bd;
 }
-
 /*.icon_1 {*/
 /*color: black;*/
 /*}*/
-
 /*.name {*/
 /*font-weight: bold;*/
 /*padding-top: 20px;*/
 /*}*/
-
 /* ****************************************************       FOOTER       *********** */
 /***************************************************************************************/
 .footer {
@@ -415,10 +350,8 @@ section .section-title {
     max-height: 180px;
     width: 100%;
 }
-
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
-
 #topBtn {
     display: none;
     position: fixed;
@@ -434,19 +367,15 @@ section .section-title {
     -moz-transition: box-shadow 0.8s ease-in-out;
     transition: box-shadow 0.8s ease-in-out;
 }
-
 #topBtn:hover {
     box-shadow: 30px 30px 30px 30px #ffc107 inset;
 }
-
 .topBtn-text {
     font-size: 30px;
     color: black;
 }
-
 /* **************************************************** COOKIES *********** */
 /***************************************************************************************/
-
 .cookies {
     position: fixed;
     left: 0px;
@@ -460,11 +389,9 @@ section .section-title {
     opacity: 0.9;
     text-align: center;
 }
-
 .cookies-text {
     font-size: 110%;
 }
-
 .cookies-akcept {
     display: inline-block;
     cursor: pointer;
