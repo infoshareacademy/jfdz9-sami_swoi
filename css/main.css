@@ -1,8 +1,10 @@
-* **************************************************** MAIN ************************* */
+/* **************************************************** MAIN ************************* */
 /***************************************************************************************/
+
 body {
     font-family: Montserrat, sans-serif;
 }
+
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
 #carouselExampleControls .carousel-item {
@@ -23,6 +25,7 @@ body {
     text-align: center;
     color: whitesmoke;
 }
+
 .hero .hero-h1 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -30,9 +33,11 @@ body {
     letter-spacing: 0.05rem;
     padding-top: 8rem;
 }
+
 .hero .hero-p {
     font-size: 1.3rem;
 }
+
 .hero .button {
     font-size: 22px;
     text-decoration: none;
@@ -41,26 +46,35 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
 }
+
 .hero .button:hover {
     background: #0A1C28;
     color: whitesmoke;
 }
+
 @media only screen and (min-width: 410px) {
     .hero {
         padding-top: 5rem;
         height: 100vh;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .hero .hero-h1 {
         font-size: 3.5rem;
     }
 }
+
 /* **************************************************** SECTION "Functions" ********** */
 /***************************************************************************************/
+
 .functions {
     padding-top: 3rem;
+    background: url("../img/functions-background-yellow.jpg");
+    background-size: 70%;
+    background-attachment: fixed;
 }
+
 .functions h1 {
     font-weight: bold;
     padding: 4rem 0;
@@ -180,89 +194,110 @@ body {
     position: relative;
     perspective: 1000px;
 }
+
 .box .box-img {
     transform: rotateY(0);
     transition: all 0.50s ease-in-out 0s;
 }
+
 .box:hover .box-img {
     transform: rotateY(-90deg);
 }
+
 .box .box-img img {
     width: 100%;
     height: auto;
 }
+
 .box .box-content {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    padding: .8rem .5rem;
+    padding: 2rem 1.2rem;
     text-align: center;
-    background: rgba(0, 0.5, 0, 0.3);
+    /*background: rgba(0, 0.5, 0, 0.3);*/
     transform: rotateY(90deg);
     transition: all 0.50s ease-in-out 0s;
 }
+
 .box:hover .box-content {
     transform: rotateY(0);
 }
+
 .box .title {
-    font-size: 20px;
+    font-size: 1.5rem;
     color: black;
     font-weight: bold;
 }
+
 .box .description {
-    font-size: .8rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     color: black;
 }
+
 .box .title:after,
 .box .description:after {
     content: "";
-    width: 80%;
+    width: 100%;
     display: block;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     margin: 10px auto;
 }
+
 .box .social-links {
-    margin: 0;
+    margin-top: 1rem;
     padding: 0;
     list-style: none;
 }
+
 .box .social-links li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 8px;
 }
+
 .box .social-links li a {
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
+    color: #007bff;
+
 }
+
 .box .social-links li a:hover {
     text-decoration: none;
-    color: #007bff;
+    color: #ffc107;
     transform: rotateY(360deg);
     transition: all 0.5s ease-in-out 0s;
 }
+
 @media only screen and (max-width: 990px) {
     .box {
         margin-bottom: 20px;
     }
 }
+
 @media only screen and (max-width: 479px) {
     .box .box-content {
         padding: 20px;
     }
 }
-.rounded-circle {
-    box-shadow: 0 5px 10px 0 #adb5bd;
+
+.img-fluid {
+    border-style: solid;
+    border-width: 5px;
+    border-color: dimgrey;
 }
+
 /*.icon_1 {*/
 /*color: black;*/
 /*}*/
+
 /*.name {*/
 /*font-weight: bold;*/
 /*padding-top: 20px;*/
 /*}*/
+
 /* ****************************************************       FOOTER       *********** */
 /***************************************************************************************/
 .footer {
@@ -350,8 +385,10 @@ section .section-title {
     max-height: 180px;
     width: 100%;
 }
+
 /* **************************************************** BACK TO TOP BUTTON *********** */
 /***************************************************************************************/
+
 #topBtn {
     display: none;
     position: fixed;
@@ -367,15 +404,19 @@ section .section-title {
     -moz-transition: box-shadow 0.8s ease-in-out;
     transition: box-shadow 0.8s ease-in-out;
 }
+
 #topBtn:hover {
     box-shadow: 30px 30px 30px 30px #ffc107 inset;
 }
+
 .topBtn-text {
     font-size: 30px;
     color: black;
 }
+
 /* **************************************************** COOKIES *********** */
 /***************************************************************************************/
+
 .cookies {
     position: fixed;
     left: 0px;
@@ -389,9 +430,11 @@ section .section-title {
     opacity: 0.9;
     text-align: center;
 }
+
 .cookies-text {
     font-size: 110%;
 }
+
 .cookies-akcept {
     display: inline-block;
     cursor: pointer;
