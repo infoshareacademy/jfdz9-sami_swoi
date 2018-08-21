@@ -7,57 +7,119 @@ body {
 
 /* *****************************************************      HEADER      ************ */
 /***************************************************************************************/
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");
+/*#carouselExampleControls .carousel-item {*/
+    /*!*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");*!*/
+    /*!*background-size: cover;*!*/
+    /*!*background-position: center;*!*/
+    /*!*height: 100vh;*!*/
+/*}*/
+
+/*.carosuel-item-1 {*/
+    /*background-image: url("img/intro-header1.jpg");*/
+/*}*/
+
+/*.carosuel-item-2 {*/
+    /*background-image: url("img/intro-header2.jpeg");*/
+/*}*/
+
+/*.carosuel-item-3 {*/
+    /*background-image: url("img/intro-header3.jpg");*/
+/*}*/
+
+/*.carousel-item {*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+/*}*/
+
+/*.hero {*/
+    /*!*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/hero3.jpg");*!*/
+    /*!*background-size: cover;*!*/
+    /*!*background-position: center;*!*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*padding: 2rem 1rem;*/
+    /*text-align: center;*/
+    /*color: whitesmoke;*/
+/*}*/
+
+/*.hero .hero-h1 {*/
+    /*font-size: 2rem;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 0.05rem;*/
+    /*padding-top: 8rem;*/
+/*}*/
+
+/*.hero .hero-p {*/
+    /*font-size: 1.3rem;*/
+/*}*/
+
+/*.hero .button {*/
+    /*font-size: 22px;*/
+    /*text-decoration: none;*/
+    /*color: whitesmoke;*/
+    /*border: whitesmoke 1px solid;*/
+    /*padding: 10px 20px;*/
+    /*margin-top: 20px;*/
+/*}*/
+
+/*.hero .button:hover {*/
+    /*background: #0A1C28;*/
+    /*color: whitesmoke;*/
+/*}*/
+
+
+
+.carosuel-item-1 {
+    background-image: url("../img/hero2.jpg");
+}
+
+.carosuel-item-2 {
+    background-image: url("../img/1111.jpeg");
+}
+
+.carosuel-item-3 {
+    background-image: url("../img/2222.jpg");
+}
+
+.carousel-item {
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
+}
+
+.min-height-100 {
+    height: 100vh;
+}
+
+.header .header-h1 {
+font-size: 2rem;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 0.05rem;
+padding-top: 8rem;
+}
+
+.header-btn {
+font-size: 1 rem;
+text-decoration: none;
+color: whitesmoke;
+border: #007bff 2px solid;
+padding: 10px 20px;
+    bottom: -19px;
+}
+
+.carousel-caption {
+    position: absolute;
+    background: RGB(255, 193, 7, 0.6);
+    bottom: 45%;
+    color: white;
     text-align: center;
-    color: whitesmoke;
 }
 
-.hero .hero-h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    padding-top: 8rem;
-}
 
-.hero .hero-p {
-    font-size: 1.3rem;
-}
 
-.hero .button {
-    font-size: 22px;
-    text-decoration: none;
-    color: whitesmoke;
-    border: whitesmoke 1px solid;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-
-.hero .button:hover {
-    background: #0A1C28;
-    color: whitesmoke;
-}
-
-@media only screen and (min-width: 410px) {
-    .hero {
-        padding-top: 5rem;
-        height: 100vh;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .hero .hero-h1 {
-        font-size: 3.5rem;
-    }
-}
 
 /* **************************************************** SECTION "Functions" ********** */
 /***************************************************************************************/
