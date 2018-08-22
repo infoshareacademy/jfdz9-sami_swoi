@@ -30,6 +30,9 @@ body {
     height: 100vh;
 }
 
+.header {
+    padding-top: 1px;
+}
 
 .header-btn {
 font-size: 1 rem;
@@ -43,7 +46,7 @@ padding: 10px 20px;
 .carousel-caption {
     position: absolute;
     background: RGB(255, 193, 7, 0.6);
-    bottom: 45%;
+    bottom: 40%;
     color: white;
     text-align: center;
 }
@@ -55,7 +58,7 @@ padding: 10px 20px;
 /***************************************************************************************/
 
 .functions {
-    /*padding-top: 3rem;*/
+    padding-top: 3rem;
     background: url("../img/functions-background-yellow.jpg");
     background-size: 70%;
     background-attachment: fixed;
@@ -320,12 +323,11 @@ padding: 10px 20px;
     color: black;
     height: 10rem;
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 1px 0;
+    padding: 24px 0;
 }
 section .section-title {
     text-align: center;
@@ -335,21 +337,19 @@ section .section-title {
 }
 #footer {
     background: #ffc107;
-    margin-bottom: 1px
 ;
 }
 #footer h5{
     padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    border-left: 30px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#007bff;;
 }
 #footer a {
     color: #ffffff;
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
 }
 #footer ul.social li{
     padding: 3px 0;
