@@ -9,7 +9,7 @@
     width: 100%;
     border-bottom: 1px solid #fff;
     transition: height .6s;
-    padding: .2rem 0 1rem;
+    padding: .2rem 1rem 1rem;
 }
 
 .body .navbar-brand {
