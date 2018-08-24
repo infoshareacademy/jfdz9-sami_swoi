@@ -54,12 +54,13 @@
 
     function drawImage() {
         updateFrame();
-        ctx.drawImage(character, srcX, srcY, width, height, x, y, width, height)
+        ctx.drawImage(character, srcX, srcY, width, height, x, y, width, height);
+        requestAnimationFrame(drawImage);
     }
-
-    setInterval(function() {
-        drawImage();
-    }, 50 );
+    requestAnimationFrame(drawImage);
+    // setInterval(function() {
+    //     drawImage();
+    // }, 90 );
 
 </script>
 
