@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-    padding-top: 1px;
+    padding: 0px 0px 1px 0px;
 }
 
 .header-btn {
@@ -43,9 +43,14 @@ padding: 10px 20px;
     bottom: -19px;
 }
 
+
+
+
+
 .carousel-caption {
     position: absolute;
-    background: RGB(255, 193, 7, 0.6);
+    background: rgba(0, 0, 0, 0.0035);
+    /*background: RGB(255, 193, 7, 0.6);*/
     bottom: 38%;
     color: white;
     text-align: center;
