@@ -14,17 +14,17 @@
 
 <script>
 
-    var canWidth = 600;
-    var canHeight = 350;
+    var canWidth = 0;
+    var canHeight = 0;
 
-    var x = 0;
-    var y = 0;
+    var x = 50;
+    var y = 237;
 
     var srcX;
     var srcY;
 
-    var sheetWidth = 1984;
-    var sheetHeight = 358;
+    var sheetWidth = 794;
+    var sheetHeight = 143;
 
     var cols = 8;
     var rows = 1;
@@ -35,7 +35,7 @@
     var currentFrame = 0;
 
     var character = new Image();
-    character.src = "img/sprite1.png";
+    character.src = "img/sprite-small.png";
 
     var canvas = document.getElementById('canvas');
 
@@ -56,11 +56,13 @@
         updateFrame();
         ctx.drawImage(character, srcX, srcY, width, height, x, y, width, height);
         requestAnimationFrame(drawImage);
+
+
     }
+
     requestAnimationFrame(drawImage);
-    // setInterval(function() {
-    //     drawImage();
-    // }, 90 );
+
+
 
 </script>
 
