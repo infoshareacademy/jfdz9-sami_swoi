@@ -7,7 +7,7 @@ var myBackgroundRoad;
 /** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
     gameArea.start();
-    myGamePiece = new component(180, 210, "img/run-t.gif", 10, 200, 'img');
+    myGamePiece = new component(200, 100, "", 10, 170, 'img');
     myGameCloud = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
     myBackgroundBack = new component(600, 400, "img/country-back.png", 0, 0, 'background');
     myBackgroundForest = new component(600, 200, "img/country-forest.png", 0, 160, 'background');
@@ -50,7 +50,11 @@ function component(width, height, color, x, y, type) {
             }
         }
     }
+
+
+
 }
+
 
 /** Tworzenie pola gry, już ruchomego i odświeżającego się **/
 var gameArea = {
@@ -83,3 +87,131 @@ function updateGameArea() {
     myGamePiece.update();
     myGameCloud.update();
 }
+
+
+/** Postać poruszająca się **/
+
+
+// function myGamePiece(path, frameWidth, frameHeight) {
+//     this.image = new Image();
+//     this.frameWidth = frameWidth;
+//     this.frameHeight = frameHeight;
+//
+//     // calculate the number of frames in a row after the image loads
+//     var self = this;
+//     this.image.onload = function() {
+//         self.framesPerRow = Math.floor(self.image.width / self.frameWidth);
+//     };
+//
+//     this.image.src = path;
+// }
+//
+// function Animation(spritesheet, frameSpeed, startFrame, endFrame) {
+//
+//     var animationSequence = [];  // array holding the order of the animation
+//     var currentFrame = 0;        // the current frame to draw
+//     var counter = 0;             // keep track of frame rate
+//
+//     // start and end range for frames
+//     for (var frameNumber = startFrame; frameNumber <= endFrame; frameNumber++)
+//         animationSequence.push(frameNumber);
+//
+//     /**
+//      * Update the animation
+//      */
+//
+//
+//     /**
+//      * Draw the current frame
+//      * @param {integer} x - X position to draw
+//      * @param {integer} y - Y position to draw
+//      */
+//     this.draw = function(x, y) {
+//         // get the row and col of the frame
+//         var row = Math.floor(animationSequence[currentFrame] / spritesheet.framesPerRow);
+//         var col = Math.floor(animationSequence[currentFrame] % spritesheet.framesPerRow);
+//
+//         ctx.drawImage(
+//             spritesheet.image,
+//             col * spritesheet.frameWidth, row * spritesheet.frameHeight,
+//             spritesheet.frameWidth, spritesheet.frameHeight,
+//             x, y,
+//             spritesheet.frameWidth, spritesheet.frameHeight);
+//     };
+// }
+//
+
+
+
+
+
+// var spriteImage =  new Image();
+// spriteImage.src = "img/sprite1.png";
+//
+// function sprite (options) {
+//
+//     var that = {};
+//
+//     that.context = options.context;
+//     that.width = options.width;
+//     that.height = options.height;
+//     that.image = options.image;
+//
+//     return that;
+//
+// }
+//
+// var canvas = document.getElementById("spriteAnimation");
+// canvas.width = 180;
+// canvas.height = 210;
+//
+// var kargul = sprite({
+//     context: canvas.getContext("2d"),
+//     width: 180,
+//     height: 210,
+//     image: spriteImage
+// });
+//
+// function sprite (options) {
+//
+//     that.render = function () {
+//
+//         // Draw the animation
+//         that.context.drawImage(
+//             that.image,
+//             0,
+//             0,
+//             that.width,
+//             that.height,
+//             0,
+//             0,
+//             that.width,
+//             that.height);
+//     };
+// }
+//
+// kargul.render();
+//
+//
+// function sprite (options) {
+//
+//     var that = {},
+//         frameIndex = 0,
+//         tickCount = 0,
+//         ticksPerFrame = options.ticksPerFrame || 0;
+//
+//     that.update = function () {
+//
+//         tickCount += 1;
+//
+//         if (tickCount > ticksPerFrame) {
+//
+//             tickCount = 0;
+//
+//             // Go to the next frame
+//             frameIndex += 1;
+//         }
+//     };
+//
+// }
+//
