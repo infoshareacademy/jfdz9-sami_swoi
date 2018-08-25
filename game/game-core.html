@@ -13,57 +13,36 @@
 <canvas id="canvas"></canvas>
 
 <script>
-
     var canWidth = 0;
     var canHeight = 0;
-
     var x = 50;
     var y = 237;
-
     var srcX;
     var srcY;
-
     var sheetWidth = 794;
     var sheetHeight = 143;
-
     var cols = 8;
     var rows = 1;
-
     var width = sheetWidth / cols;
     var height = sheetHeight / rows;
-
     var currentFrame = 0;
-
     var character = new Image();
     character.src = "img/sprite-small.png";
-
     var canvas = document.getElementById('canvas');
-
     canvas.width = canWidth;
     canvas.height = canHeight;
-
     var ctx = canvas.getContext('2d');
-
     function updateFrame() {
         currentFrame = ++currentFrame % cols;
-
         srcX = currentFrame * width;
         srcY = 0;
-
     }
-
     function drawImage() {
         updateFrame();
         ctx.drawImage(character, srcX, srcY, width, height, x, y, width, height);
         requestAnimationFrame(drawImage);
-
-
     }
-
     requestAnimationFrame(drawImage);
-
-
-
 </script>
 
 
