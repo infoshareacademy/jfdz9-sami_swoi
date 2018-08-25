@@ -284,6 +284,12 @@ background: rgba(255, 193, 7, 0.6);
     /*background: rgba(0, 0.5, 0, 0.3);*/
     transform: rotateY(90deg);
     transition: all 0.50s ease-in-out 0s;
+    display: flex;
+}
+
+.boxcontentreper {
+    margin: auto;
+
 }
 
 .box:hover .box-content {
@@ -300,6 +306,7 @@ background: rgba(255, 193, 7, 0.6);
     font-size: 1rem;
     line-height: 1.3rem;
     color: black;
+    b
 }
 
 .box .title:after,
