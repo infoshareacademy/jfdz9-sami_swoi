@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GAME WINDOW</title>
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/game-background.css">
+   <meta charset="UTF-8">
+   <title>GAME WINDOW</title>
+   <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy%7CPress+Start+2P" rel="stylesheet">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/game-background.css">
 </head>
 
 <body onload="startGame()">
@@ -14,158 +14,98 @@
 
 <script>
 
-    var canWidth = 0;
-    var canHeight = 0;
+   var canWidth = 0;
+   var canHeight = 0;
 
-    // var x = 50;
-    // var y = 237;
+   // var x = 50;
+   // var y = 237;
 
-    var player = {
-        x: 50,
-        y: 237,
-        jumping: false,
-        jumpingHeight: 0,
-    };
+   var player = {
+       x: 50,
+       y: 237,
+       jumping: false,
+       jumpingHeight: 0,
+   };
 
-    var srcX;
-    var srcY;
+   var srcX;
+   var srcY;
 
-    var sheetWidth = 794;
-    var sheetHeight = 143;
+   var sheetWidth = 794;
+   var sheetHeight = 143;
 
-    var cols = 8;
-    var rows = 1;
-    var licznik = 0;
+   var cols = 8;
+   var rows = 1;
+   var licznik = 0;
 
-    var width = sheetWidth / cols;
-    var height = sheetHeight / rows;
+   var width = sheetWidth / cols;
+   var height = sheetHeight / rows;
 
-    var currentFrame = 0;
+   var currentFrame = 0;
 
-    var character = new Image();
-    character.src = "img/sprite-small.png";
+   var character = new Image();
+   character.src = "img/sprite-small.png";
 
-    var canvas = document.getElementById('canvas');
+   var canvas = document.getElementById('canvas');
 
-    canvas.width = canWidth;
-    canvas.height = canHeight;
+   canvas.width = canWidth;
+   canvas.height = canHeight;
 
-    var ctx = canvas.getContext('2d');
+   var ctx = canvas.getContext('2d');
 
-    function updateFrame() {
-        animatePlayer();
-        if (player.jumping === true) {
-            handleJumping()
-        }
+   function updateFrame() {
+       animatePlayer();
+       if (player.jumping === true) {
+           handleJumping()
+       }
 
-    }
+   }
 
-    function animatePlayer() {
-        licznik = licznik+1 % 60;
-        if (licznik % 6 === 0) {
-            currentFrame = ++currentFrame % cols;
+   function animatePlayer() {
+       licznik = licznik+1 % 60;
+       if (licznik % 6 === 0) {
+           currentFrame = ++currentFrame % cols;
 
-            srcX = currentFrame * width;
-            srcY = 0;
-        }
-    }
+           srcX = currentFrame * width;
+           srcY = 0;
+       }
+   }
 
-    function handleJumping() {
+   function handleJumping() {
 
-        player.jumpingHeight += 1;// gravity
-        player.y += player.jumpingHeight;
-        player.jumpingHeight *= 0.95;// friction
+       player.jumpingHeight += 1;// gravity
+       player.y += player.jumpingHeight;
+       player.jumpingHeight *= 0.95;// friction
 
-        // if rectangle is falling below floor line
-        if (player.y > 237) {
-            player.jumping = false;
-            player.y = 237;
-            player.jumpingHeight = 0;
-        }
-    }
+       // if rectangle is falling below floor line
+       if (player.y > 237) {
+           player.jumping = false;
+           player.y = 237;
+           player.jumpingHeight = 0;
+       }
+   }
 
-    function jumpAnimation(event) {
+   function jumpAnimation(event) {
 
-        if (event.code === "Space" && player.jumping === false) {
-            player.jumpingHeight -= 25;
-            console.log("JUMP");
-            player.jumping = true;
-        }
-    }
-
-
-
-
-    function drawImage() {
-        updateFrame();
-        ctx.drawImage(character, srcX, srcY, width, height, player.x, player.y, width, height);
-        requestAnimationFrame(drawImage);
-
-
-    }
-
-    window.addEventListener("keydown", jumpAnimation);
-    requestAnimationFrame(drawImage);
+       if (event.code === "Space" && player.jumping === false) {
+           player.jumpingHeight -= 25;
+           console.log("JUMP");
+           player.jumping = true;
+       }
+   }
 
 
 
 
+   function drawImage() {
+       updateFrame();
+       ctx.drawImage(character, srcX, srcY, width, height, player.x, player.y, width, height);
+       requestAnimationFrame(drawImage);
 
 
+   }
 
-
-
-    //*****************************************************************************JUMP
-
-    //
-    // let context = document.querySelector("canvas").getContext("2d");
-    // context.canvas.height = 500;
-    // context.canvas.width = 1000;
-    //
-    //
-    // let kwadrat = {
-    //     jumping: true,
-    //     jumpingHeight: 0,
-    //     height: 50,
-    //     width: 50,
-    //     x: 475,
-    //     y: 500,
-    //
-    // };
-    //
-    // function jumpAnimation(event) {
-    //
-    //     if (event.code === "Space" && kwadrat.jumping === false) {
-    //         kwadrat.jumpingHeight -= 25;
-    //         kwadrat.jumping = true;
-    //     }
-    // }
-    //
-    // function loopKwadrat () {
-    //
-    //     kwadrat.jumpingHeight += 1;// gravity
-    //     kwadrat.y += kwadrat.jumpingHeight;
-    //     kwadrat.jumpingHeight *= 0.95;// friction
-    //
-    //     // if rectangle is falling below floor line
-    //     if (kwadrat.y > 500 - 25 - 50) {
-    //         kwadrat.jumping = false;
-    //         kwadrat.y = 500 - 25 - 50;
-    //         kwadrat.jumpingHeight = 0;
-    //     }
-    //
-    //     context.fillStyle = "#f5e361";
-    //     context.fillRect(0, 0, 1000, 500);
-    //     context.fillStyle = "#46344e";
-    //     context.fillRect(kwadrat.x, kwadrat.y, kwadrat.width, kwadrat.height);
-    //
-    //     window.requestAnimationFrame(loopKwadrat);
-    // }
-    //
-    // window.addEventListener("keydown", jumpAnimation);
-    // window.requestAnimationFrame(loopKwadrat);
-
-
+   window.addEventListener("keydown", jumpAnimation);
+   requestAnimationFrame(drawImage);
 
 
 </script>
