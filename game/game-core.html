@@ -28,6 +28,7 @@
 
     var cols = 8;
     var rows = 1;
+    var licznik = 0;
 
     var width = sheetWidth / cols;
     var height = sheetHeight / rows;
@@ -45,10 +46,14 @@
     var ctx = canvas.getContext('2d');
 
     function updateFrame() {
-        currentFrame = ++currentFrame % cols;
+        licznik = licznik+1 % 60;
+        if (licznik % 6 === 0) {
+            currentFrame = ++currentFrame % cols;
 
-        srcX = currentFrame * width;
-        srcY = 0;
+            srcX = currentFrame * width;
+            srcY = 0;
+        }
+
 
     }
 
@@ -61,6 +66,58 @@
     }
 
     requestAnimationFrame(drawImage);
+
+
+    //*****************************************************************************JUMP
+
+
+    let context = document.querySelector("canvas").getContext("2d");
+    context.canvas.height = 500;
+    context.canvas.width = 1000;
+
+
+    let kwadrat = {
+        jumping: true,
+        jumpingHeight: 0,
+        height: 50,
+        width: 50,
+        x: 475,
+        y: 500,
+
+    };
+
+    function jumpAnimation(event) {
+
+        if (event.code === "Space" && kwadrat.jumping === false) {
+            kwadrat.jumpingHeight -= 25;
+            kwadrat.jumping = true;
+        }
+    }
+
+    function loopKwadrat () {
+
+        kwadrat.jumpingHeight += 1;// gravity
+        kwadrat.y += kwadrat.jumpingHeight;
+        kwadrat.jumpingHeight *= 0.95;// friction
+
+        // if rectangle is falling below floor line
+        if (kwadrat.y > 500 - 25 - 50) {
+            kwadrat.jumping = false;
+            kwadrat.y = 500 - 25 - 50;
+            kwadrat.jumpingHeight = 0;
+        }
+
+        context.fillStyle = "#f5e361";
+        context.fillRect(0, 0, 1000, 500);
+        context.fillStyle = "#46344e";
+        context.fillRect(kwadrat.x, kwadrat.y, kwadrat.width, kwadrat.height);
+
+        window.requestAnimationFrame(loopKwadrat);
+    }
+
+    window.addEventListener("keydown", jumpAnimation);
+    window.requestAnimationFrame(loopKwadrat);
+
 
 
 
