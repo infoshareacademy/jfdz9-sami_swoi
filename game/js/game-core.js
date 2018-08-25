@@ -3,7 +3,7 @@ var myGameCloudBig;
 var myBackgroundBack;
 var myBackgroundForest;
 var myBackgroundRoad;
-var gameSpeed = 20;
+var gameSpeed = 10;
 
 setInterval(function() {
    gameSpeed *= 1.1;
@@ -75,6 +75,7 @@ var gameArea = {
     },
     clear: function () {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.interval = setInterval(updateGameArea, 8000);
     }
 };
 
