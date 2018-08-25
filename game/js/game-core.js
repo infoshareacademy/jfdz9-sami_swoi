@@ -48,9 +48,12 @@ function component(width, height, color, x, y, type) {
             if (this.x <= -(this.width)) {
                 this.x = 0;
             }
+        } else if (this.type === "img") {
+            if (this.x <= -(this.width)) {
+                this.x = 700;
+            }
         }
     }
-
 
 }
 
@@ -86,4 +89,6 @@ function updateGameArea() {
     myGameCloudBig.x -= 0.5; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGameCloudSmall.update();
     myGameCloudBig.update();
+    myGameCloudBig.newPos();
+    myGameCloudSmall.newPos();
 }
