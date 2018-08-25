@@ -1,17 +1,16 @@
 var myGameCloudSmall;
 var myGameCloudBig;
+var myGameObstacle;
 var myBackgroundBack;
 var myBackgroundForest;
 var myBackgroundRoad;
-
-var obstacleSouth = new Image();
-obstacleSouth.src = "img/cloud-2.png";
 
 /** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
     gameArea.start();
     myGameCloudSmall = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
     myGameCloudBig = new component(100, 70, "img/cloud-2.png", 600, 30, 'img');
+    myGameObstacle = new component(10, 70, "red", 500, 303, 'obstacle');
     myBackgroundBack = new component(600, 400, "img/country-back.png", 0, 0, 'background');
     myBackgroundForest = new component(600, 200, "img/country-forest.png", 0, 160, 'background');
     myBackgroundRoad = new component(600, 200, "img/country-road.png", 0, 200, 'background');
@@ -90,8 +89,11 @@ function updateGameArea() {
     myBackgroundRoad.update();
     myGameCloudSmall.x -= 0.8; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGameCloudBig.x -= 0.4; //to odpowiada za przesuwanie się chmurki (komponentu), próba
+    myGameObstacle.x -= 1; //to odpowiada za przesuwanie się chmurki (komponentu), próba
+    myGameObstacle.update();
     myGameCloudSmall.update();
     myGameCloudBig.update();
     myGameCloudBig.newPos();
     myGameCloudSmall.newPos();
+    myGameObstacle.newPos();
 }
