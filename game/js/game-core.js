@@ -85,8 +85,8 @@ function updateGameArea() {
     myBackgroundBack.update();
     myBackgroundForest.update();
     myBackgroundRoad.update();
-    myGameCloudSmall.x -= 1; //to odpowiada za przesuwanie się chmurki (komponentu), próba
-    myGameCloudBig.x -= 0.5; //to odpowiada za przesuwanie się chmurki (komponentu), próba
+    myGameCloudSmall.x -= 0.8; //to odpowiada za przesuwanie się chmurki (komponentu), próba
+    myGameCloudBig.x -= 0.4; //to odpowiada za przesuwanie się chmurki (komponentu), próba
     myGameCloudSmall.update();
     myGameCloudBig.update();
     myGameCloudBig.newPos();
