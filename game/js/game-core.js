@@ -7,7 +7,7 @@ var myBackgroundRoad;
 /** Startowanie gry i stworzenie jednego komponentu **/
 function startGame() {
     gameArea.start();
-    myGamePiece = new component(180, 210, "img/run-t.gif", 10, 200, 'img');
+    myGamePiece = new component(200, 100, "", 10, 170, 'img');
     myGameCloud = new component(100, 70, "img/cloud-1.png", 600, 50, 'img');
     myBackgroundBack = new component(600, 400, "img/country-back.png", 0, 0, 'background');
     myBackgroundForest = new component(600, 200, "img/country-forest.png", 0, 160, 'background');
@@ -50,7 +50,11 @@ function component(width, height, color, x, y, type) {
             }
         }
     }
+
+
+
 }
+
 
 /** Tworzenie pola gry, już ruchomego i odświeżającego się **/
 var gameArea = {
