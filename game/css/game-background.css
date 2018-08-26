@@ -1,3 +1,7 @@
+#canvas {
+    position: fixed;
+}
+
 html {
     display: flex;
     justify-content: center;
