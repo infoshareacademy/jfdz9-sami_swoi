@@ -89,7 +89,7 @@ $(document).ready(function () {
     /* ************************************ SMOOTH SCROLLING *** */
 
     const navlink = $('a[href^="#"]'),
-          logo = $("#logo");
+        logo = $("#logo");
 
     navlink.click(function (event) {
         let target = $(this.getAttribute('href'));
@@ -151,12 +151,13 @@ $(document).ready(function () {
     emailField.focusout(function () {
         emailValidate();
     });
+
     function emailValidate() {
         const pattern = /^([\w-]+@([\w-]+\.)+[\w-]{2,4})?$/;
         let email = emailField.val();
 
-        if(email !== ''){
-            if(pattern.test(email)){
+        if (email !== '') {
+            if (pattern.test(email)) {
                 $('.fa-check').css('display', 'block');
                 $('.fa-times').css('display', 'none');
             } else {
