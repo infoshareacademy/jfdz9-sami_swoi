@@ -24,7 +24,6 @@ html {
     }
 }
 
-
 body {
     background: linear-gradient(rgba(138, 154, 213, 0.29), rgba(255, 160, 245, 0.4)),
     url("../img/game-bg.png") no-repeat center center fixed;
@@ -107,10 +106,20 @@ body {
         background: rgba(244, 66, 134, 0.91);
     }
 
+    .manual-btn {
+        position: absolute;
+        width: 15rem;
+        left: 7rem;
+        bottom: 13rem;
+        padding: 1.3rem 3rem;
+        transform: rotate(35deg);
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
 }
 
-
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
 
     body {
         padding: 2rem 7rem;
@@ -133,7 +142,7 @@ body {
 
     }
 
-    .start-btn   {
+    .start-btn {
         animation: start-btn 2s;
         animation-fill-mode: forwards;
     }
