@@ -86,5 +86,11 @@ function drawImage() {
 
 }
 
+window.addEventListener("touchstart", () => {
+    player.jumpingHeight -= 25;
+    console.log("JUMP");
+    player.jumping = true;
+});
+
 window.addEventListener("keydown", jumpAnimation);
 requestAnimationFrame(drawImage);
