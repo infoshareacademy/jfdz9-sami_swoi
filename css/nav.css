@@ -175,27 +175,3 @@
 
 }
 
-
-.nav-menu .nav-menu__list > li > a.nav-menu__item--btnlang {
-    padding: 9.5px 0; }
-.nav-menu .nav-menu__list > li > a.nav-menu__item--btnlang:hover {
-    background-color: transparent;
-    cursor: pointer; }
-
-.nav-menu .navbar-header a.nav-menu__item--btnlang {
-    width: 50%;
-    height: 50%;
-    display: none;
-    float: right;
-    margin: 10.5px 20px 10.5px 0; }
-.nav-menu .navbar-header a.nav-menu__item--btnlang:hover {
-    background-color: transparent;
-    cursor: pointer; }
-
-@media screen and (max-width: 767px) {
-    .nav-menu .navbar-header a.nav-menu__item--btnlang {
-        display: block; }
-
-    .nav-menu .nav-menu__list > li > a.nav-menu__item--btnlang {
-        display: none; } }
-
