@@ -654,3 +654,7 @@ a.cubeBtn:focus span::before {
     padding: 7px 0 7px 27px;
     font-size: 90%;
 }
+
+.footer-h5-bold {
+    font-weight: bold;
+}
