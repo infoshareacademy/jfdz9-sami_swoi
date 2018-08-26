@@ -168,7 +168,7 @@ background: rgba(255, 193, 7, 0.6);
 
 .offer {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/background-background-image-blue-sky-1054218.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/1background-background-image-blue-sky-1054218.jpg");
     background-size: cover;
     background-position: center;
     padding: 3rem 0;
@@ -366,42 +366,37 @@ background: rgba(255, 193, 7, 0.6);
 /***************************************************************************************/
 .footer {
     color: black;
-    height: 10rem;
+    height: 22rem;
     width: 100%;
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-section {
     padding: 24px 0;
+    background: #ffc107;
 }
 
-section .section-title {
+.section-title {
     text-align: center;
     color: #007bff;;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-#footer {
-    background: #ffc107;
-    margin-bottom: 1px;
-}
-#footer h5{
+
+.footer h5{
     padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#007bff;
 }
-#footer a {
+.footer a {
     color: #ffffff;
     /*text-decoration: none !important;*/
     background-color: transparent;
 }
-#footer ul.social li{
+.footer ul.social li{
     padding: 3px 0;
 }
-#footer ul.social li a i {
+.footer ul.social li a i {
     margin-right: 5px;
     font-size:25px;
     -webkit-transition: .5s all ease;
@@ -409,43 +404,43 @@ section .section-title {
     transition: .5s all ease;
 }
 
-#footer ul.social li:hover a i {
+.footer ul.social li:hover a i {
     font-size: 30px;
     margin-top: -10px;
 }
 
-#footer ul.social li a,
-#footer ul.quick-links li a {
+.footer ul.social li a,
+.footer ul.quick-links li a {
     color: #007bff;;
 }
 
-#footer ul.social li a:hover {
+.footer ul.social li a:hover {
     color: #eeeeee;
 }
 
-#footer ul.quick-links li {
+.footer ul.quick-links li {
     padding: 3px 0;
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
     transition: .5s all ease;
 }
 
-#footer ul.quick-links li:hover {
+.footer ul.quick-links li:hover {
     padding: 3px 0;
     margin-left: 5px;
     font-weight: 700;
 }
 
-#footer ul.quick-links li a i {
+.footer ul.quick-links li a i {
     margin-right: 5px;
 }
 
-#footer ul.quick-links li:hover a i {
+.footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
 
 @media (max-width: 767px) {
-    #footer h5 {
+    .footer h5 {
         padding-left: 0;
         border-left: transparent;
         padding-bottom: 0px;
