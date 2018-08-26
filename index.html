@@ -14,7 +14,6 @@
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/form.css">
     <title>HARUJEMY.PL</title>
 </head>
 <body id="body" class="body">
@@ -335,7 +334,7 @@
 <!--/************* Form ************/-->
 
 <section class="newsletter container-fluid bg-warning" id="newsletter">
-
+    <h1>NEWSLETTER</h1>
     <h2 class="newsletter-topic">Dowiedz się kiedy inicjalizujemy naszą usługę.
         Ponadto przycisk "WYŚLIJ" rozpoczyna <strong>"grę o płot"</strong>. Pobijesz highscore?</h2>
     <div class="kargule">
@@ -344,14 +343,15 @@
         <img src="img/kargul-form.png" alt="" class="kargul">
     </div>
 
-    <form action="form.php" method="post" class="form">
+    <form name="myForm" id="form" class="form" action="form.php" method="post">
+
         <label class="form-label item-1" for="name">
 
             Imię:
             <span class="star">*</span>
             <input type="text"
                    name="name"
-                   id="name">
+                   id="name" required>
 
         </label>
 
@@ -361,7 +361,7 @@
             <span class="star">*</span>
             <input type="email"
                    name="email"
-                   id="email">
+                   id="email" required>
 
         </label>
           
@@ -375,6 +375,7 @@
         </textarea>
 
         <input type="submit" name="submit" value="WYŚLIJ" class="send">
+
     </form>
     <p class="mail-info">* Wysyłamy jednego maila z informacją o premierze strony. Twoje dane są bezpieczne.</p>
 

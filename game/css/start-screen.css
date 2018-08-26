@@ -8,14 +8,28 @@
 
 html {
     background-color: rgba(82, 79, 57, 0.8);
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
 body {
     background: linear-gradient(rgba(138, 154, 213, 0.29), rgba(255, 160, 245, 0.4)),
-                url("../img/game-bg.png") no-repeat center center fixed;
+    url("../img/game-bg.png") no-repeat center center fixed;
     background-size: cover;
+    padding: 3rem;
     color: #4286f4;
     width: 100%;
     height: 100vh;
@@ -55,7 +69,6 @@ body {
     .btn {
         width: 20rem;
         position: relative;
-        top: 1.8rem;
         margin: 3rem;
         margin-bottom: .5rem;
         padding: 1.7rem 3.5rem;
@@ -66,11 +79,6 @@ body {
         background: rgba(244, 176, 66, 0.95);
         color: #fff;
         box-shadow: 0 0 0 rgba(15, 165, 60, 0.1);
-
-        -webkit-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        transform: translateZ(0);
 
         -webkit-transform: rotateX(20deg);
         -moz-transform: rotateX(20deg);
@@ -92,7 +100,6 @@ body {
         top: -10px;
         box-shadow: 0 10px 10px rgba(244, 66, 134, 0.47);
 
-
     }
 
     .btn:active {
@@ -103,3 +110,86 @@ body {
 }
 
 
+@media only screen and (min-width: 1200px){
+
+    body {
+        padding: 2rem 7rem;
+    }
+
+    .main-header {
+        animation: header 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes header {
+
+        from {
+            font-size: 0;
+        }
+
+        to {
+            font-size: 4rem;
+        }
+
+    }
+
+    .start-btn   {
+        animation: start-btn 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .close-btn {
+        animation: close-btn 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .score-btn {
+        animation: score-btn 2s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes start-btn {
+        from {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        to {
+            position: absolute;
+            top: 30%;
+            left: 18%;
+        }
+    }
+
+    @keyframes close-btn {
+        from {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        to {
+            position: absolute;
+            top: 30%;
+            right: 18%;
+        }
+    }
+
+    @keyframes score-btn {
+        from {
+            position: absolute;
+            top: -100px;
+            left: 35%;
+        }
+
+        to {
+            position: absolute;
+            left: 35%;
+            top: 50%;
+        }
+
+    }
+
+}
