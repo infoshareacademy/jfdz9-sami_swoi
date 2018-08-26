@@ -305,6 +305,11 @@ a.cubeBtn:focus span::before {
     margin: 10% auto;
 }
 
+.last {
+    margin-bottom: 1px;
+    padding-bottom: 20px;
+}
+
 .functions-content-subcontainers:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
