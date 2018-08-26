@@ -45,7 +45,7 @@ $(document).ready(function () {
 
     /* ******************************* NAV LINK HIGHLIGHTING *** */
 
-// Cache selectors
+    // Cache selectors
     let lastId,
         topMenu = $("#menu"),
         topMenuHeight = topMenu.outerHeight() + 15,
@@ -59,7 +59,7 @@ $(document).ready(function () {
             }
         });
 
-// Bind to scroll
+    // Bind to scroll
     $(window).scroll(function () {
 
         // Get container scroll position
@@ -81,14 +81,15 @@ $(document).ready(function () {
             // Set/remove active class
             menuItems
                 .parent().removeClass("active")
-                .end().filter("[href='#" + id + "']").parent().addClass("active");
+                .end().filter("[href='#" + id + "']")
+                .parent().addClass("active");
         }
     });
 
     /* ************************************ SMOOTH SCROLLING *** */
 
     const navlink = $('a[href^="#"]'),
-          logo = $("#logo");
+        logo = $("#logo");
 
     navlink.click(function (event) {
         let target = $(this.getAttribute('href'));
@@ -107,7 +108,6 @@ $(document).ready(function () {
 
     /* **************************************** GO UP BUTTON *** */
 
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 10) {
             $('#topBtn').fadeIn('slow');
@@ -122,11 +122,32 @@ $(document).ready(function () {
     });
 
 
+    /* ******************************************** ABOUT US *** */
+
+    const $AboutTeamPhotos = $('.about-photo');
+    const $aboutTeamOffset = $AboutTeamPhotos.offset().top;
+    const $startSection = $('#banner');
+
+
+    function animateTeamPhotos() {
+        let windowBottomEdge = $(window).scrollTop() + $(window).height();
+
+        if (windowBottomEdge > $aboutTeamOffset) {
+            $AboutTeamPhotos.addClass('zoomIn');
+        }
+    }
+
+    $(window).on('scroll', animateTeamPhotos);
+
+    $(document).ready(function () {
+        $startSection.addClass('fadeInRight');
+    });
+
+
     /* ************************************* FORM VALIDATION *** */
 
     const nameField = $('#name');
     const emailField = $('#mail');
-    
     emailField.focusout(function () {
         emailValidate();
     });
@@ -135,8 +156,8 @@ $(document).ready(function () {
         const pattern = /^([\w-]+@([\w-]+\.)+[\w-]{2,4})?$/;
         let email = emailField.val();
 
-        if(email !== ''){
-            if(pattern.test(email)){
+        if (email !== '') {
+            if (pattern.test(email)) {
                 $('.fa-check').css('display', 'block');
                 $('.fa-times').css('display', 'none');
             } else {
@@ -150,33 +171,16 @@ $(document).ready(function () {
         }
     }
 
-    /* ************************************* FORM SUBMISSION *** */
 
+    /* ***************** GAME-START-SCREEN & FORM SUBMISSION *** */
+
+    $('#form').submit(function () {
+        window.open('game/start-screen.html');
+    })
 
 });
 
 
 
-/* ************************************* ABOUT US *** */
-
-
-const $AboutTeamPhotos = $('.about-photo');
-const $aboutTeamOffset = $AboutTeamPhotos.offset().top;
-const $startSection = $('#banner');
-
-
-function animateTeamPhotos() {
-    let windowBottomEdge = $(window).scrollTop() + $(window).height();
-
-    if (windowBottomEdge > $aboutTeamOffset) {
-        $AboutTeamPhotos.addClass('zoomIn');
-    }
-}
-
-$(window).on('scroll', animateTeamPhotos);
-
-$(document).ready(function () {
-    $startSection.addClass('fadeInRight');
-});
 
 

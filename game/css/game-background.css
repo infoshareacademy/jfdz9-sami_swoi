@@ -1,4 +1,13 @@
-
-canvas {
-    background: lightblue;
+html {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
 }
+
+body {
+    background: url("../img/game-bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
