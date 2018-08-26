@@ -562,8 +562,13 @@ a.cubeBtn:focus span::before {
     text-align: center;
 }
 
+.newsletter-head {
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
 .mail-info {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 1.8rem 0;
 }
 
@@ -593,7 +598,6 @@ a.cubeBtn:focus span::before {
 
 .form-label input {
     margin-left: 1rem;
-    width: 200px;
 }
 
 .form-textarea {
@@ -612,7 +616,13 @@ a.cubeBtn:focus span::before {
 
 .form-label input:focus, .form-textarea:focus {
     box-shadow: inset 0 0 3px 0 #007bff;
+}
 
+p.form-label-data {
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -649,6 +659,14 @@ a.cubeBtn:focus span::before {
         grid-column-start: 1;
         grid-column-end: 3;
         justify-self: end;
+        position: relative;
+        display: inline-block;
+        padding: 0 20px;
+        background: rgba(255, 193, 7, 0.6);
+        transition: transform 0.5s;
+        transform-origin: 50% 0;
+        transform-style: preserve-3d;
+        border: #007bff 2px solid;
     }
 
 }
