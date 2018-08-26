@@ -12,7 +12,7 @@ body {
     position: absolute;
     background: rgba(0, 0, 0, 0.0035);
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
 }
 
 .carosuel-item-1 {
@@ -284,6 +284,12 @@ a.cubeBtn:focus span::before {
     /*background: rgba(0, 0.5, 0, 0.3);*/
     transform: rotateY(90deg);
     transition: all 0.50s ease-in-out 0s;
+    display: flex;
+}
+
+.boxcontentreper {
+    margin: auto;
+
 }
 
 .box:hover .box-content {
@@ -300,6 +306,7 @@ a.cubeBtn:focus span::before {
     font-size: 1rem;
     line-height: 1.3rem;
     color: black;
+    b
 }
 
 .box .title:after,
